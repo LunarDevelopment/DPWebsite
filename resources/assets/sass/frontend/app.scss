@@ -1,11 +1,211 @@
+@import "fonts/montserrat";
 @import "variable-overrides";
 @import "../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import '../../../../node_modules/font-awesome/scss/font-awesome';
+@import "../../../../node_modules/font-awesome/scss/font-awesome";
+@import "header/header";
+@import "footer/footer";
+@import "panels";
+@import "products/products";
+@import "homepage/homepage";
+
+/**
+ * Paragraph Overrides
+ */
+p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  line-height: 34px;
+  margin-bottom: 48px;
+}
+ul, ol {
+  @extend p;
+  margin-bottom: 10px;
+}
+
+/**
+ * Container Overrides
+ */
+@media (min-width: 1200px) {
+  .container, .container-full-height {
+    width: 870px;
+  }
+}
+
+/**
+ * Header Overrides
+ */
+h1, h2, h3, h4, h5, h6 {
+  color: $brown;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 75px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 75px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/**
+ * Button Overrides
+ */
+a {
+  color: $orange;
+}
+a:hover, a:focus, a:active {
+  color: darken($orange, 20%);
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  padding: 6px 26px;
+  border-radius: 20px;
+}
+
+.btn-darkgreen {
+  @extend .btn-success;
+  background-color: darken($green, 10%);
+  &:hover {
+    background-color: darken($green, 20%);
+  }
+}
+
+.btn-yellow {
+  @extend .btn-success;
+  background-color: $yellow;
+  &:hover {
+    background-color: darken($yellow, 20%);
+  }
+}
+
+.btn-turquoise {
+  @extend .btn-success;
+  background-color: $turquoise;
+  &:hover {
+    background-color: darken($turquoise, 20%);
+  }
+}
+
+.btn-call-to-action {
+  border: 2px solid #FFFFFF !important;
+  font-size: 18px;
+  background-color: #EF5A2D;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: darken(#EF5A2D, 20%);
+  }
+}
+
+/**
+ * Text Overrides
+ */
+.text-primary {
+  color: $blue;
+}
+
+.text-success {
+  color: $green;
+}
+
+.text-warning {
+  color: $orange;
+}
+
+.text-danger {
+  color: $pink;
+}
+
+.text-turquoise {
+  color: $turquoise;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.small-print {
+  font-size: 14px;
+  color: #898585;
+}
+
+/**
+ * Form Overrides
+ */
+form {
+  margin: 70px 0;
+}
+.form-control {
+  height: auto;
+  padding: 8px 22px;
+  font-size: 20px;
+  color: #000 !important;
+  background-color: #E6E6E6;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/**
+ * Background Styles
+ */
+.bg-primary {
+  background-color: $blue;
+}
+.bg-success {
+  background-color: $green;
+}
+.bg-warning {
+  background-color: $orange;
+}
+.bg-danger {
+  background-color: $pink;
+}
+.bg-yellow {
+  background-color: $yellow;
+}
+.bg-turquoise {
+  background-color: $turquoise;
+}
+.bg-grass {
+  background-color: #52863D;
+}
 
 /**
  * Frontend Styles Start Here
  */
+#app-layout {
+  //margin-top: 210px !important;
+}
+
+.full-height {
+  height: 100vh;
+}
+
 .logged-in-as {
-  margin:0;
-  border-radius:0;
+  margin: 0;
+  border-radius: 0;
+}
+
+.hide {
+  visibility: hidden;
 }

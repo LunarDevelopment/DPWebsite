@@ -1,0 +1,70 @@
+.panel {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #F5F5F5;
+  border: none;
+  border-top: 8px $green solid;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 60px 120px;
+  h1 {
+    color: $green;
+  }
+}
+
+.panel-default {
+  border-top: 8px $green solid;
+  h1 {
+    color: $green;
+  }
+}
+
+.panel-success {
+  border-top: 8px $green solid;
+  h1 {
+    color: $green;
+  }
+}
+
+.panel-primary {
+  border-top: 8px $blue solid;
+  h1 {
+    color: $blue;
+  }
+}
+
+.panel-warning {
+  border-top: 8px $orange solid;
+  h1 {
+    color: $orange;
+  }
+}
+
+.panel-danger {
+  border-top: 8px $pink solid;
+  h1 {
+    color: $pink;
+  }
+}
+
+.panel-turquoise {
+  border-top: 8px $turquoise solid;
+  h1 {
+    color: $turquoise;
+  }
+}
+
+.panel-yellow {
+  border-top: 8px $yellow solid;
+  h1 {
+    color: $yellow;
+  }
+}
+
+.panel-icon {
+  position: absolute;
+  top: 40px;
+  left: -64px;
+  width: 160px;
+  height: auto;
+}

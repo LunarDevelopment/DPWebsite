@@ -1,0 +1,17 @@
+.header-logo {
+  position: absolute;
+  z-index: 3001;
+  img {
+    height: 148px;
+    width: auto;
+  }
+}
+
+.header-logo-fixed {
+  position: fixed;
+  z-index: 3001;
+  img {
+    height: 74px;
+    width: auto;
+  }
+}

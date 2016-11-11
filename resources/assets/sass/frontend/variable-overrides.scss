@@ -1,2 +1,26 @@
 $fa-font-path: "../fonts/font-awesome";
-$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/**
+ * Colours
+ */
+$orange: #F15A29;
+$green: #72AC42;
+$brown: #3A3331;
+$blue: #02639D;
+$turquoise: #00A47D;
+$pink: #F91E41;
+$yellow: #F0B80C;
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              #67655D;   // #333
+$gray:                   #B74934; // #555
+$gray-light:             #AA9A66; // #777
+$gray-lighter:           #A8A8A1; // #eee
+
+$brand-primary:         $blue; // #337ab7
+$brand-success:         $green !default;
+$brand-info:            $blue !default;
+$brand-warning:         $yellow !default;
+$brand-danger:          $pink !default;

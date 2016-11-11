@@ -33,6 +33,7 @@
         {{ HTML::script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}
         {{ HTML::script('https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js') }}
         <![endif]-->
+        <link media="all" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700">
     </head>
     <body class="skin-{{ config('backend.theme') }} {{ config('backend.layout') }}">
         @include('includes.partials.logged-in-as')

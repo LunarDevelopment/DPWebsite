@@ -23,6 +23,8 @@ elixir(function(mix) {
        'public/js/vendor/bootstrap'
      )
 
+     .browserify('resources/assets/js/frontend/picnicscroll.js', 'public/js/picnic-scroll.js')
+
      /**
       * Process frontend SCSS stylesheets
       */

@@ -1,0 +1,21 @@
+.footer-gingham {
+  height: 15px;
+  background-image: url('/img/website/gingham.svg');
+  background-repeat: repeat-x;
+}
+
+.footer-dma {
+  height: 80px;
+}
+
+.footer-copyright {
+  padding: 28px 0;
+  color: #FFFFFF;
+  background-color: #3A3331;
+  p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 26px;
+  }
+}

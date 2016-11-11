@@ -1,59 +1,60 @@
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#frontend-navbar-collapse">
-                <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            {{ link_to_route('frontend.index', app_name(), [], ['class' => 'navbar-brand']) }}
-        </div><!--navbar-header-->
-
-        <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>{{ link_to_route('frontend.index', trans('navs.general.home')) }}</li>
-                <li>{{ link_to_route('frontend.macros', trans('navs.frontend.macros')) }}</li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                @if (config('locale.status') && count(config('locale.languages')) > 1)
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ trans('menus.language-picker.language') }}
-                            <span class="caret"></span>
-                        </a>
-
-                        @include('includes.partials.lang')
-                    </li>
-                @endif
-
-                @if (access()->guest())
-                    <li>{{ link_to('login', trans('navs.frontend.login')) }}</li>
-                    <li>{{ link_to('register', trans('navs.frontend.register')) }}</li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ access()->user()->name }} <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li>{{ link_to_route('frontend.user.dashboard', trans('navs.frontend.dashboard')) }}</li>
-
-                            @if (access()->user()->canChangePassword())
-                                <li>{{ link_to_route('auth.password.change', trans('navs.frontend.user.change_password')) }}</li>
-                            @endif
-
-                            @permission('view-backend')
-                            <li>{{ link_to_route('admin.dashboard', trans('navs.frontend.user.administration')) }}</li>
-                            @endauth
-
-                            <li>{{ link_to_route('auth.logout', trans('navs.general.logout')) }}</li>
-                        </ul>
-                    </li>
-                @endif
-            </ul>
-        </div><!--navbar-collapse-->
-    </div><!--container-->
-</nav>
+<div class="container-fluid" id="subscribe">
+    <div class="row">
+        <!-- Company Logo -->
+        <div id="logo" class="header-logo">
+            <a href="/"><img src="/img/website/LogoWithBox.png" alt="Digital Picnic Logo"></a>
+        </div>
+        <!-- Subscribe Bar -->
+        <div class="container-fluid header-subscribe">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="text-center">Subscribe to our mailing list
+                            <a class="btn btn-success" href="/subscribe">Join the Picnic</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="nav" class="container-fluid">
+    <div class="row">
+        <!-- Main navigation -->
+        <nav class="navbar center navbar-default">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-inner">
+                    <ul class="nav navbar-nav">
+                        <li class="parent-link-style"><a class="" href="/">Home</a></li>
+                        <li class="dropdown parent-link-style">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about-us">About us</a></li>
+                                <li><a href="meet-the-team">Meet the Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown parent-link-style">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="marketing-lists">Marketing lists</a></li>
+                                <li><a href="cpe-campaigns">CPE Campaigns</a></li>
+                                <li><a href="managed-email-campaigns">Managed email campaigns</a></li>
+                                <li><a href="design">Design</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown parent-link-style">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Contact Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="contact-us">Contact us</a></li>
+                                <li><a href="subscribe">Subscribe</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+@import 'home-header';
+@import 'home-scroll';
+@import 'home-basket';
+@import 'home-footer';
+
+.home {
+  .panel {
+    height: 700px;
+    h1 {
+      margin-bottom: 26px;
+      margin-top: 0px;
+    }
+    li {
+      font-weight: 200;
+    }
+    p {
+      margin-bottom: 26px;
+    }
+  }
+  .full-height {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+}
