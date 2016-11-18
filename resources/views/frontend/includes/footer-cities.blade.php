@@ -1,6 +1,4 @@
-<div class="container-fluid footer-city">
-    <div class="footer-hill"></div>
-</div>
-<div class="footer-grass">
-
+<div class="footer-cities">
+    <img src="/img/website/city.svg" class="footer-city">
+    <img class="hidden-xs footer-hill" src="/img/website/hill.svg" class="footer-hill">
 </div>

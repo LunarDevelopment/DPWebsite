@@ -14,31 +14,21 @@
         Come and take a look at who we are and <a href="/meet-the-team">meet the Digital Picnic team!</a>
     </p>
     <div class="row">
-        <div class="col-md-3 text-center">
-            <h3 class="text-primary">Marketing Lists</h3>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <h3 class="text-primary about-us-img-text">Marketing Lists</h3>
+            <img class="about-img-icon" src="/img/website/data.svg">
         </div>
-        <div class="col-md-3 text-center">
-            <h3 class="text-yellow">(CPE) Email Marketing</h3>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <h3 class="text-yellow about-us-img-text">(CPE) Email Marketing</h3>
+            <img class="about-img-icon" src="/img/website/cpe.svg">
         </div>
-        <div class="col-md-3 text-center">
-            <h3 class="text-turquoise">Managed Email Campaigns</h3>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <h3 class="text-turquoise about-us-img-text">Managed Email Campaigns</h3>
+            <img class="about-img-icon" src="/img/website/campaigns.svg">
         </div>
-        <div class="col-md-3 text-center">
-            <h3 class="text-danger">Design</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <img style="width: 125px;" src="/img/website/data.svg">
-        </div>
-        <div class="col-md-3 text-center">
-            <img style="width: 125px;" src="/img/website/cpe.svg">
-        </div>
-        <div class="col-md-3 text-center">
-            <img style="height: 125px;" src="/img/website/campaigns.svg">
-        </div>
-        <div class="col-md-3 text-center">
-            <img style="width: 125px;" src="/img/website/designs.svg">
+        <div class="col-sm-3 col-xs-6 text-center">
+            <h3 class="text-danger about-us-img-text">Design</h3>
+            <img class="about-img-icon" src="/img/website/designs.svg">
         </div>
     </div>
 @endsection

@@ -6,23 +6,19 @@
             <div class="col-md-12">
                 <div class="panel panel-yellow">
                     <img class="panel-icon" src="\img\website\cpe.svg">
-                    <h1>Cpe Email Marketing</h1>
-                    <p><strong>Our marketing lists offer you the
-                            opportunity to reach senior decision makers
-                            in a range of industries within the UK –
-                            giving you the opportunity to generate new
-                            business and increase brand awareness.</strong></p>
-                    <p>Whether you need an email address, telephone number
-                        or need to know how many employees a company has,
-                        you can find it within our data records.</p>
-                    <p>Our databases are updated regularly which ensures we’ve
-                        got the most relevant information to help your marketing
-                        campaign go off without a hitch. Regular updates to the
-                        database also make things easier for you – you don’t want
-                        to be ringing a large number of companies just to discover
-                        you have incorrect information or spend your money on a
-                        direct marketing campaign that’s going to be delivered to
-                        the wrong address.</p>
+                    <h1>Cost Per Engagement Campaigns
+                    </h1>
+                    <p><strong>Email marketing has an average ROI of £38 for every £1 spent, and you're average order
+                            value is likely to be 3x higher compared to leads from social media... But what if facts and
+                            figures aren't enough? Still not sure email marketing is for you?</strong></p>
+                    <p>Sample the Picnic with our Cost Per Engagement (CPE) campaigns. They do as they say, in which
+                        after a small set up fee, you'll only have to pay for the engagement the campaign generates for
+                        your brand. So if we don't perform, you don't pay!</p>
+                    <p>Our team will work closely with you on everything from the design to the domain you're sending
+                        from, ensuring your email strategy is effective and sustainable for you as a business.</p>
+                    <p>Need to feed your Sales team with so many leads per day? Email us <a
+                                href="mailto:info@digital-picnic.com">info@digital-picnic.email</a> to find out how
+                        we can create a bespoke strategy to keep your Sales team busy! </p>
                 </div>
             </div>
         </div>
@@ -31,10 +27,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Our marketing lists offer you the opportunity to reach senior
-                        decision makers in a range of industries within the UK –
-                        giving you the opportunity to generate new business.
-                        <span>Liam Bell, Digital Picnic</span>
+                    <p>We've been using Digital Picnic for email marketing since 2015, and we wouldn't go anywhere else!
+                        Their friendly approach to customer service is unique in their industry and filled us full of
+                        confidence from the start - no matter what we need, our Account Manager Danielle is always there
+                        to help us out. They're a one stop shop that suits our needs perfectly!
+                        <span>Stephen Robinson, Espresso Web</span>
                     </p>
                 </div>
             </div>
@@ -47,37 +44,37 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="single-package bg-yellow">Education</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Manufacturing</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Transport</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Retail & Wholesale</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Hospitality & Leisure</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">SMEs</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Farming</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Care & Nursing</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-yellow">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-yellow">Finance</div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>Get in touch blah blah blah.</p>
+                <p>Call us today on <a href="tel:+441912359569">0191 235 9569</a> to find out how the Picnic can help you!</p>
             </div>
         </div>
     </div>

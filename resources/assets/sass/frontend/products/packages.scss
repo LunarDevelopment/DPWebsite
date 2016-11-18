@@ -13,3 +13,37 @@
     margin-top: 30px;
   }
 }
+.products-panel {
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 500px;
+  margin-top: 100px;
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+.products-panel-icon {
+  height: 155px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 0%;
+  margin-top: -150px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .products-panel {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 600px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .products-panel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

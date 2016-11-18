@@ -98,5 +98,7 @@ elixir(function(mix) {
          "public/css/backend-rtl.css",
          "public/js/backend.js",
          "public/css/rtl.css"
-     ]);
+     ])
+
+     .browserify("frontend/meet-the-team.js", "public/js/meet-the-team.js");
 });

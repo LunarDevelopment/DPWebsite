@@ -7,11 +7,9 @@
                 <div class="panel panel-primary">
                     <img class="panel-icon" src="\img\website\data.svg">
                     <h1>Marketing Lists</h1>
-                    <p><strong>Our marketing lists offer you the
-                            opportunity to reach senior decision makers
-                            in a range of industries within the UK –
-                            giving you the opportunity to generate new
-                            business and increase brand awareness.</strong></p>
+                    <p><strong>Our marketing lists offer you the opportunity to reach senior decision makers in a range
+                            of industries within the UK – giving you the opportunity to generate new business and
+                            increase brand awareness.</strong></p>
                     <p>Whether you need an email address, telephone number
                         or need to know how many employees a company has,
                         you can find it within our data records.</p>
@@ -31,10 +29,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Our marketing lists offer you the opportunity to reach senior
-                        decision makers in a range of industries within the UK –
-                        giving you the opportunity to generate new business.
-                        <span>Liam Bell, Digital Picnic</span>
+                    <p>We've been working with Digital Picnic since October '15 and I can't recommend them enough. Their
+                        team are truly excellent, they're always on hand and ALWAYS to a very high, knowledgeable, and
+                        professional level. The data we've licensed so far has also been of a very high standard. If you
+                        haven’t already realised, your business needs one of their digital sandwiches! Now!
+                        <span>Kieran Hayes, Perfect Web Design, Epic-Digital, Superluminal Software</span>
                     </p>
                 </div>
             </div>
@@ -47,42 +46,43 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
                 <div class="single-package bg-primary">Education</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Manufacturing</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Transport</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Retail & Wholesale</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Hospitality & Leisure</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">SMEs</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Farming</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Care & Nursing</div>
             </div>
-            <div class="col-md-4">
-                <div class="single-package bg-primary">Education</div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-package bg-primary">Finance</div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>Get in touch blah blah blah.</p>
+                <p>Call us today on <a href="tel:+441912359569">0191 235 9569</a> to find out how the Picnic can help
+                    you!</p>
             </div>
         </div>
     </div>
 @endsection
 
-@section('after-scripts-end')
-
-@stop
+@section('before-scripts-end')
+    <script src="/js/meet-the-team.js"></script>
+@endsection

@@ -1,103 +1,98 @@
+/**
+ * The script is only to run on devices greater than or equal to 992px.
+ * To do this I check whether a class has changed to its media query value for devices under 992px.
+ * If the media query value has changed the code will not run.
+ */
+
 var AnimateToPosition = require('./PicnicScroll/AnimateToPosition');
-var ReAnimateToPosition = require('./PicnicScroll/ReAnimateToPosition');
-var StartPosition = require('./PicnicScroll/StartPosition');
-var FixToPosition = require('./PicnicScroll/FixToPosition');
-var FinaleAnimate = require('./PicnicScroll/FinaleAnimate');
-var windowHeight;
-var halfWindowHeight;
-var windowWidth;
-var halfWindowWidth;
-var quarterWindowWidth;
-var basketItemHeight;
-var basketItemWidth;
-var siteNavHeight;
-var itemBasketOne = true;
-var itemBasketTwo = true;
-var itemBasketThree = true;
-var itemBasketFour = true;
-var lastScrollTop = 0;
-var scrollDirection = 0;
-var scrollFlag = 0;
 
-/**
- * Document Ready
- */
+var runCode = false;
+
 $(document).ready(function () {
-    windowHeight = $(window).height();
-    halfWindowHeight = windowHeight / 2;
-    windowWidth = $(window).width();
-    halfWindowWidth = windowWidth / 2;
-    quarterWindowWidth = windowWidth / 4;
-    basketItemHeight = $('.home-icon').height();
-    basketItemWidth = $('.home-icon').width();
-    siteNavHeight = $('#main-nav').height();
-    StartPosition.centerBasketPos(halfWindowHeight, halfWindowWidth);
-    StartPosition.iconOneBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconTwoBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconThreeBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconFourBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-});
-
-/**
- * Scroll listener
- */
-$(window).scroll(function() {
-    if (scrollFlag === 0) {
-        /*
-         * Get Scroll Position INT.
+    /**
+     * Check wether
+     */
+    checkSize();
+    if (runCode) {
+        /**
+         * Set variables to be used in logic below.
          */
-        scroll = $(window).scrollTop();
+        var windowHeight;
+        var halfWindowHeight;
+        var quarterWindowHeight;
+        var windowWidth;
+        var halfWindowWidth;
+        var quarterWindowWidth;
+        var siteNavHeight;
+        var itemBasketOne = true;
+        var itemBasketTwo = true;
+        var itemBasketThree = true;
+        var itemBasketFour = true;
+        var finalePosition = true;
+        var lastScrollTop = 0;
+        var scrollDirection = 0;
+        var scrollFlag = 0;
+        var basketItemHeight = 220;
+        var basketPos;
 
-        /*
-         * Get Scroll Direction
+        /**
+         * Document Ready
          */
-        var scrollTop = $(this).scrollTop();
-        if (scrollTop > lastScrollTop) {
-            scrollDirection = 1; //up
-        } else {
-            scrollDirection = 0; //down
-        }
-        lastScrollTop = scrollTop;
+        windowHeight = $(window).height();
+        halfWindowHeight = windowHeight / 2;
+        quarterWindowHeight = windowHeight / 4;
+        windowWidth = $(window).width();
+        halfWindowWidth = windowWidth / 2;
+        quarterWindowWidth = windowWidth / 4;
+        basketPos = halfWindowHeight + quarterWindowHeight - (basketItemHeight / 4);
+        siteNavHeight = $('#main-nav').height();
+        $('#picnic-basket').css({'left': '50%', 'margin-left': '-160px', 'top': basketPos + 'px'});
+        $('.about-img-icon').css({'opacity': '0'});
+        /**
+         * Scroll listener
+         */
+        $(window).scroll(function () {
+            if (scrollFlag === 0) {
+                /*
+                 * Get Scroll Position INT.
+                 */
+                var scroll = $(window).scrollTop();
+                console.log(scroll);
 
-        /*
-         * Scroll down Animations triggers
-         */
-        if (scroll > windowHeight && itemBasketOne && scrollDirection) {
-            AnimateToPosition.iconOneAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketOne = false;
-        } else if (scroll > (windowHeight * 2) && itemBasketTwo && scrollDirection) {
-            AnimateToPosition.iconTwoAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketTwo = false;
-        } else if (scroll > (windowHeight * 3) && itemBasketThree && scrollDirection) {
-            AnimateToPosition.iconThreeAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketThree = false;
-        } else if (scroll > (windowHeight * 4) && itemBasketFour && scrollDirection) {
-            AnimateToPosition.iconFourAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketFour = false;
-        }
-
-        /*
-         * Scroll up Animations triggers
-         */
-        if (scroll < windowHeight && itemBasketOne === false && !scrollDirection) {
-            ReAnimateToPosition.iconOneAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketOne = true;
-        } else if (scroll < (windowHeight * 2) && itemBasketTwo === false && !scrollDirection) {
-            ReAnimateToPosition.iconTwoAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketTwo = true;
-        } else if (scroll < (windowHeight * 3) && itemBasketThree === false && !scrollDirection) {
-            ReAnimateToPosition.iconThreeAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketThree = true;
-        } else if (scroll < (windowHeight * 4) && itemBasketFour === false && !scrollDirection) {
-            ReAnimateToPosition.iconFourAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketFour = true;
-        }
+                /*
+                 * Scroll down Animations triggers
+                 */
+                if (scroll > windowHeight && itemBasketOne) {
+                    var iconPosition = $('#section-two-icon').offset();
+                    AnimateToPosition.iconOneAnimate(basketPos, iconPosition);
+                    itemBasketOne = false;
+                } else if (scroll > (windowHeight * 2) && itemBasketTwo) {
+                    var iconPosition = $('#section-three-icon').offset();
+                    AnimateToPosition.iconTwoAnimate(basketPos, iconPosition);
+                    itemBasketTwo = false;
+                } else if (scroll > (windowHeight * 3) && itemBasketThree) {
+                    var iconPosition = $('#section-four-icon').offset();
+                    AnimateToPosition.iconThreeAnimate(basketPos, iconPosition);
+                    itemBasketThree = false;
+                } else if (scroll > (windowHeight * 4) && itemBasketFour) {
+                    var iconPosition = $('#section-five-icon').offset();
+                    AnimateToPosition.iconFourAnimate(basketPos, iconPosition);
+                    itemBasketFour = false;
+                } else if (scroll > 5220 && finalePosition) {
+                    var basketPosition = $('#picnic-basket').offset();
+                    AnimateToPosition.finalePosition(basketPosition);
+                    finalePosition = false;
+                }
+            }
+        });
     }
 });
 
-// $('#footer-section').click(function(quarterWindowWidth, halfWindowHeight) {
-//     FinaleAnimate.iconOneFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconTwoFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconThreeFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconFourFinalePos(quarterWindowWidth, halfWindowHeight);
-// });
+/**
+ * This function checks a class to see if it has changed to its media query value.
+ */
+function checkSize() {
+    if ($(".panel-icon").css("margin-top") !== "-80px" || $(".panel-icon").css("margin-top") !== "-50px;") {
+        runCode = true;
+    }
+}

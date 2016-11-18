@@ -29,5 +29,22 @@ return [
             'change_password' => 'Change Password',
             'my_information' => 'My Information',
         ],
+
+        /*
+         * Website language lines
+         */
+        'index' => 'home',
+        'about-us' => 'about us',
+        'meet-the-team' => 'meet the team',
+        'products' => 'products',
+        'marketing-lists' => 'marketing lists',
+        'cpe-campaigns' => 'CPE campaigns',
+        'managed-email-campaigns' => 'managed email campaigns',
+        'design' => 'design',
+        'contact-us' => 'contact us',
+        'faq' => 'FAQs',
+        'subscribe' => 'subscribe',
+        'privacy-policy' => 'privacy policy',
+        'site-map' => 'site map',
     ],
 ];

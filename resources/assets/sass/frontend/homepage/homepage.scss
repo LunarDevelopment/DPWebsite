@@ -3,22 +3,50 @@
 @import 'home-basket';
 @import 'home-footer';
 
-.home {
-  .panel {
-    height: 700px;
-    h1 {
-      margin-bottom: 26px;
-      margin-top: 0px;
+@media (min-width: 992px) {
+  .home {
+    .panel {
+      height: 700px;
+      h1 {
+        margin-bottom: 26px;
+        margin-top: 0px;
+      }
+      li {
+        font-weight: 200;
+      }
+      p {
+        margin-bottom: 26px;
+      }
     }
-    li {
-      font-weight: 200;
-    }
-    p {
-      margin-bottom: 26px;
+    .full-height {
+      padding-top: 8%;
+      padding-bottom: 8%;
     }
   }
-  .full-height {
-    padding-top: 8%;
-    padding-bottom: 8%;
+}
+
+@media (max-width: 767px) {
+  .home {
+    .panel {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .home {
+    .panel {
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 35px;
+      ul {
+        text-align: left !important;
+        margin-bottom: 35px;
+      }
+      p {
+        margin-bottom: 35px;
+      }
+    }
   }
 }

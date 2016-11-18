@@ -7,9 +7,17 @@
   border-radius: 0;
   box-shadow: none;
   padding: 60px 120px;
+  position: relative;
   h1 {
     color: $green;
   }
+}
+
+.panel-icon {
+  width: 180px;
+  position: absolute;
+  left: 0;
+  margin-left: -90px;
 }
 
 .panel-default {
@@ -61,10 +69,42 @@
   }
 }
 
-.panel-icon {
-  position: absolute;
-  top: 40px;
-  left: -64px;
-  width: 160px;
-  height: auto;
+@media (min-width: 768px) and (max-width: 992px) {
+  .panel {
+    margin-top: 60px;
+    text-align: center;
+    h1 {
+      margin-top: 85px;
+    }
+  }
+  .panel-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -80px;
+    width: 160px;
+    height: auto;
+    z-index: 2999;
+    margin-left: -80px;
+  }
 }
+
+@media (max-width: 767px) {
+  .panel-icon {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+    margin-top: -50px;
+  }
+  .panel {
+    h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+    padding: 48px 18px;
+    margin-top: 50px;
+  }
+}
+

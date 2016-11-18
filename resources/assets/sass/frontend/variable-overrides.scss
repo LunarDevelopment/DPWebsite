@@ -24,3 +24,47 @@ $brand-success:         $green !default;
 $brand-info:            $blue !default;
 $brand-warning:         $yellow !default;
 $brand-danger:          $pink !default;
+
+.alert-cookies {
+  position: fixed;
+  bottom: 0;
+  margin: 0 !important;
+  border: none;
+  border-radius: 0;
+  background-color: $green;
+  color: #FFF;
+  width: 100%;
+  z-index: 3005;
+  padding-bottom: 10px;
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 34px;
+
+  }
+  .cookie {
+    height: 66px;
+    float: left;
+    margin-right: 16px;
+  }
+  .cookies-close {
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .cookies-close:focus {
+    outline: none;
+  }
+}

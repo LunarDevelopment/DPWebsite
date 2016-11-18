@@ -7,22 +7,15 @@
                 <div class="panel panel-danger">
                     <img class="panel-icon" src="\img\website\designs.svg">
                     <h1>Design</h1>
-                    <p><strong>Our marketing lists offer you the
-                            opportunity to reach senior decision makers
-                            in a range of industries within the UK –
-                            giving you the opportunity to generate new
-                            business and increase brand awareness.</strong></p>
-                    <p>Whether you need an email address, telephone number
-                        or need to know how many employees a company has,
-                        you can find it within our data records.</p>
-                    <p>Our databases are updated regularly which ensures we’ve
-                        got the most relevant information to help your marketing
-                        campaign go off without a hitch. Regular updates to the
-                        database also make things easier for you – you don’t want
-                        to be ringing a large number of companies just to discover
-                        you have incorrect information or spend your money on a
-                        direct marketing campaign that’s going to be delivered to
-                        the wrong address.</p>
+                    <p><strong>Being able to create your designs in a drag and drop editor might be easy to do, but how
+                            do you know the email will get into the inbox? Your design is one of the biggest factors
+                            affecting the spam rating of your campaign... So if you're no expert, you need an
+                            expert.</strong></p>
+                    <p>Our designers have worked on campaigns for almost every B2B industry thinkable, keeping
+                        themselves up to date with the latest trends in the email marketing industry - meaning your
+                        designs will always keep you one step ahead of your competition and at the forefront of your
+                        prospect's mind. But we don't just stop at email, our designers can assist you with both digital
+                        and print designs. </p>
                 </div>
             </div>
         </div>
@@ -31,10 +24,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Our marketing lists offer you the opportunity to reach senior
-                        decision makers in a range of industries within the UK –
-                        giving you the opportunity to generate new business.
-                        <span>Liam Bell, Digital Picnic</span>
+                    <p>I have found the service you provide to be excellent. You have worked with us on many occasions
+                        fine tuning our requests for data counts and have guided us towards the right decisions each
+                        time. You are professional, helpful and a pleasure to deal with so thank you.
+                        <span>Dan Woolley - Zap Recruitment</span>
                     </p>
                 </div>
             </div>
@@ -43,41 +36,7 @@
     <div class="container packages">
         <div class="row">
             <div class="col-md-12">
-                <h3>Below are just a few examples of data packages we currently provide</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-danger">Education</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>Get in touch blah blah blah.</p>
+                <p>Call us today on <a href="tel:+441912359569">0191 235 9569</a> to find out how the Picnic can help you!</p>
             </div>
         </div>
     </div>

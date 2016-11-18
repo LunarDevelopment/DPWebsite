@@ -1,4 +1,4 @@
-<div class="container-fluid" id="subscribe">
+<div class="container-fluid hidden-sm hidden-xs" id="subscribe">
     <div class="row">
         <!-- Company Logo -->
         <div id="logo" class="header-logo">
@@ -17,44 +17,84 @@
         </div>
     </div>
 </div>
-<div id="nav" class="container-fluid">
+
+<div id="nav" class="container-fluid hidden-sm hidden-xs">
     <div class="row">
         <!-- Main navigation -->
         <nav class="navbar center navbar-default">
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse">
                 <div class="navbar-inner">
                     <ul class="nav navbar-nav">
-                        <li class="parent-link-style"><a class="" href="/">Home</a></li>
+                        <li class="parent-link-style">{{ link_to_route('frontend.index', trans('navs.frontend.index')) }}</li>
                         <li class="dropdown parent-link-style">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> About Us</a>
+                            <a href="{{ route('frontend.about-us') }}"><span
+                                        class="caret"></span> {{ trans('navs.frontend.about-us') }}</a>
                             <ul class="dropdown-menu">
-                                <li><a href="about-us">About us</a></li>
-                                <li><a href="meet-the-team">Meet the Team</a></li>
+                                <li>{{ link_to_route('frontend.about-us', trans('navs.frontend.about-us')) }}</li>
+                                <li>{{ link_to_route('frontend.meet-the-team', trans('navs.frontend.meet-the-team')) }}</li>
                             </ul>
                         </li>
                         <li class="dropdown parent-link-style">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Products</a>
+                            <a href="{{ route('frontend.products') }}"><span
+                                        class="caret"></span> {{ trans('navs.frontend.products') }}</a>
                             <ul class="dropdown-menu">
-                                <li><a href="marketing-lists">Marketing lists</a></li>
-                                <li><a href="cpe-campaigns">CPE Campaigns</a></li>
-                                <li><a href="managed-email-campaigns">Managed email campaigns</a></li>
-                                <li><a href="design">Design</a></li>
+                                <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
+                                <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
+                                <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
+                                <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
                             </ul>
                         </li>
                         <li class="dropdown parent-link-style">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false"><span class="caret"></span> Contact Us</a>
+                            <a href="{{ route('frontend.contact-us') }}"><span
+                                        class="caret"></span> {{ trans('navs.frontend.contact-us') }}</a>
                             <ul class="dropdown-menu">
-                                <li><a href="contact-us">Contact us</a></li>
-                                <li><a href="subscribe">Subscribe</a></li>
+                                <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
+                                <li>{{ link_to_route('frontend.subscribe', trans('navs.frontend.subscribe')) }}</li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid hidden-md hidden-lg">
+    <div class="row">
+        <!-- Main navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="/img/website/DPlogo.svg"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-inner">
+                        <ul class="nav navbar-nav">
+                            <li>{{ link_to_route('frontend.index', trans('navs.frontend.index')) }}</li>
+                            <li>{{ link_to_route('frontend.about-us', trans('navs.frontend.about-us')) }}</li>
+                            <li>{{ link_to_route('frontend.meet-the-team', trans('navs.frontend.meet-the-team')) }}</li>
+                            <li>{{ link_to_route('frontend.products', trans('navs.frontend.products')) }}</li>
+                            <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
+                            <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
+                            <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
+                            <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
+                            <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
+                            <li>{{ link_to_route('frontend.subscribe', trans('navs.frontend.subscribe')) }}</li>
+                        </ul>
+                    </div>
+                </div>
         </nav>
     </div>
 </div>

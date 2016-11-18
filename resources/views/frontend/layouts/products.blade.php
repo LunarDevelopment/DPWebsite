@@ -9,8 +9,8 @@
     <title>@yield('title', app_name())</title>
 
     <!-- Meta -->
-    <meta name="description" content="@yield('meta_description', 'Laravel 5 Boilerplate')">
-    <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
+    <meta name="description" content="@yield('meta_description', 'Digital Picnic')">
+    <meta name="author" content="@yield('meta_author', 'Benjamin Jackson')">
 @yield('meta')
 
 <!-- Styles -->
@@ -32,17 +32,7 @@
 
 @yield('content')
 
+@include('frontend.includes.footer-cities')
+@include('frontend.includes.footer-body')
+@include('frontend.includes.footer-copyright')
 @include('frontend.includes.footer')
-<!-- Scripts -->
-{{ HTML::script('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js') }}
-<script>window.jQuery || document.write('<script src="{{asset('js/vendor/jquery/jquery-2.1.4.min.js')}}"><\/script>')</script>
-{!! Html::script('js/vendor/bootstrap/bootstrap.min.js') !!}
-
-@yield('before-scripts-end')
-{{--{!! Html::script(elixir('js/frontend.js')) !!}--}}
-@yield('after-scripts-end')
-@include('frontend.scripts.hide-nav')
-
-@include('includes.partials.ga')
-</body>
-</html>

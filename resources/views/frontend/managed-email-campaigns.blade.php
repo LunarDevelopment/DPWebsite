@@ -7,22 +7,24 @@
                 <div class="panel panel-turquoise">
                     <img class="panel-icon" src="\img\website\campaigns.svg">
                     <h1>Managed Email Campaigns</h1>
-                    <p><strong>Our marketing lists offer you the
-                            opportunity to reach senior decision makers
-                            in a range of industries within the UK –
-                            giving you the opportunity to generate new
-                            business and increase brand awareness.</strong></p>
-                    <p>Whether you need an email address, telephone number
-                        or need to know how many employees a company has,
-                        you can find it within our data records.</p>
-                    <p>Our databases are updated regularly which ensures we’ve
-                        got the most relevant information to help your marketing
-                        campaign go off without a hitch. Regular updates to the
-                        database also make things easier for you – you don’t want
-                        to be ringing a large number of companies just to discover
-                        you have incorrect information or spend your money on a
-                        direct marketing campaign that’s going to be delivered to
-                        the wrong address.</p>
+                    <p><strong>So you’ve sorted your contacts and are ready to get in touch, but how do you do it?
+                            Whether you’re an email marketing veteran or just getting started out, the marketing team at
+                            Digital Picnic are ready to get your campaigns underway.
+                        </strong></p>
+                    <p>We’ve worked with a number of brands across a range of industries, so we understand there is no
+                        ‘one size fits all’ approach. We’ll spend time to develop a tailor made strategy specifically
+                        for your brand, covering everything from subject lines to design – that works for your customers
+                        and gets you results.</p>
+                    <p>We’ll set up a private email sending domain – with an email address that matches your website URL
+                        for use on your email campaigns alone meaning you have full control over your own sending
+                        reputation.</p>
+                    <p>Then, to help you maximize your ROI we’ll provide you with Live Lead Alerts within 15 minutes of
+                        a recipient clicking on a web link and visiting your website! (That’s over 95 times quicker than
+                        other analytics!) Not only this but we’ll also provide a full report giving you access to the
+                        data records of those who’ve shown interest in your email either by opening or clicking on a web
+                        link. The report allows you to see a breakdown of who opened, who clicked through, and what they
+                        clicked on – giving you insight into what the recipient is interested in, making it easier for
+                        you to follow up that lead and generate some business.</p>
                 </div>
             </div>
         </div>
@@ -31,10 +33,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Our marketing lists offer you the opportunity to reach senior
-                        decision makers in a range of industries within the UK –
-                        giving you the opportunity to generate new business.
-                        <span>Liam Bell, Digital Picnic</span>
+                    <p>We've been using Digital Picnic to manage our email marketing for over a year now - the campaigns
+                        have made it so much easier for us to identify businesses looking to purchase compared to
+                        trawling through a big list of data, and our Account Manager Danielle is always extremely
+                        helpful when we're looking to find a new target audience!
+                        <span>Martyn Stanworth, EFS Group</span>
                     </p>
                 </div>
             </div>
@@ -43,41 +46,7 @@
     <div class="container packages">
         <div class="row">
             <div class="col-md-12">
-                <h3>Below are just a few examples of data packages we currently provide</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-            <div class="col-md-4">
-                <div class="single-package bg-turquoise">Education</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>Get in touch blah blah blah.</p>
+                <p>Call us today on <a href="tel:+441912359569">0191 235 9569</a> to find out how the Picnic can help you!</p>
             </div>
         </div>
     </div>

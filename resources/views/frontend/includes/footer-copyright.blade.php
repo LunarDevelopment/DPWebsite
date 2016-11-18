@@ -6,7 +6,7 @@
                 Digital Picnic is registered in England.<br>
                 Data Protection Number CSN5772388</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 hidden-xs">
             <a href="https://dma.org.uk/"><img class="footer-dma pull-right" src="\img\website\dma.svg"></a>
         </div>
     </div>

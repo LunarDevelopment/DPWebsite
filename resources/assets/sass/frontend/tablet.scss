@@ -1,0 +1,12 @@
+/*
+ * Styles specifically for tablet should go here. Tablet is classed as anything equal to or more than 768px
+ * but less than 992px.
+ */
+@media(min-width: 768px) and (max-width: 992px) {
+  h1 {
+    margin-bottom: 30px;
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}

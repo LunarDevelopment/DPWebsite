@@ -6,21 +6,37 @@
  */
 module.exports = {
 
-    iconOneAnimate: function(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-1').css({'position': 'fixed','top': halfWindowHeight / 2 * 1.55 + 'px','left': quarterWindowWidth})
-            .animate({'left': (halfWindowWidth - 146) + 'px','top':halfWindowHeight + 'px'}, 1000);
+    iconOneAnimate: function(basketPos, iconPos) {
+        $('#section-two-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '-152'}, 1000);
     },
-    iconTwoAnimate: function(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-2').css({'position' :'fixed','top': halfWindowHeight / 2 * 1.55 + 'px','left': quarterWindowWidth * 3})
-            .animate({'left': (halfWindowWidth + 46) + 'px','top' :halfWindowHeight + 'px'}, 1000);
+    iconTwoAnimate: function(basketPos, iconPos) {
+        $('#section-three-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
+            .animate({'left': '50%','top':basketPos + 'px', 'height': '110px', 'z-index': '2991', 'margin-left': '-120px'}, 1000);
     },
-    iconThreeAnimate: function(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-3').css({'position':'fixed','top': halfWindowHeight / 2 * 1.55 + 'px','left': quarterWindowWidth})
-            .animate({'left': (halfWindowWidth - 100) + 'px','top':halfWindowHeight + 'px'}, 1000);
+    iconThreeAnimate: function(basketPos, iconPos) {
+        $('#section-four-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2992', 'margin-left': '-10px'}, 1000);
     },
-    iconFourAnimate: function(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-4').css({'position':'fixed','top': halfWindowHeight / 2 * 1.55 + 'px','left': quarterWindowWidth * 3})
-            .animate({'left': halfWindowWidth + 'px','top':halfWindowHeight + 'px'}, 1000);
-    }
+    iconFourAnimate: function(basketPos, iconPos) {
+        $('#section-five-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '42px'}, 1000);
+    },
+
+    finalePosition: function(basketPosition) {
+        $('#picnic-basket').css({'position': 'absolute','top': basketPosition.top + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
+
+        $('#section-two-icon').addClass('hidden');
+        $('#section-three-icon').addClass('hidden');
+        $('#section-four-icon').addClass('hidden');
+        $('#section-five-icon').addClass('hidden');
+
+        $('.about-img-icon').animate({'opacity' : '1'}, 1000);
+
+        $('#section-two-icon-hidden').removeClass('hidden');
+        $('#section-three-icon-hidden').removeClass('hidden');
+        $('#section-four-icon-hidden').removeClass('hidden');
+        $('#section-five-icon-hidden').removeClass('hidden');
+    },
 
 };

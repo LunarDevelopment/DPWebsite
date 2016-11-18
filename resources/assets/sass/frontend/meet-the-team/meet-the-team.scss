@@ -1,0 +1,87 @@
+.meet-the-team-individual {
+  height: 220px;
+  img {
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+  }
+}
+
+.sort-by-team {
+  margin-bottom: 4px;
+}
+
+.sort-by-team-links {
+  color: #000000;
+  input[type="button"], input[type="button"]:focus, input[type="button"]:active,
+  button, button:focus, button:active {
+    /* Remove all decorations to look like normal text */
+    background: none;
+    color: #000000;
+    border: none;
+    display: inline;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-offset: 0;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  /* Remove extra space inside buttons in Firefox */
+  input[type="button"]::-moz-focus-inner,
+  button::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+  .meet-the-team-individual {
+    height: 240px;
+  }
+  .modal-dialog {
+    width: 80%;
+  }
+  .modal-panel {
+    padding: 60px 40px;
+    a {
+      font-size: 18px;
+    }
+    h1 {
+      margin-top: 50px;
+    }
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .meet-the-team-individual {
+    height: 240px;
+  }
+  .modal-dialog {
+    width: 95%;
+  }
+  .modal-panel {
+    padding: 60px 40px;
+    a {
+      font-size: 18px;
+    }
+    h1 {
+      margin-top: 50px;
+    }
+    margin-top: 100px;
+    text-align: center;
+  }
+  .modal-close {
+    float: none;
+  }
+}

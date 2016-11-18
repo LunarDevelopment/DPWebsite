@@ -8,231 +8,139 @@
 
 module.exports = {
 
-    iconOneAnimate: function iconOneAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-1').css({ 'position': 'fixed', 'top': halfWindowHeight / 2 * 1.55 + 'px', 'left': quarterWindowWidth }).animate({ 'left': halfWindowWidth - 146 + 'px', 'top': halfWindowHeight + 'px' }, 1000);
+    iconOneAnimate: function iconOneAnimate(basketPos, iconPos) {
+        $('#section-two-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '-152' }, 1000);
     },
-    iconTwoAnimate: function iconTwoAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-2').css({ 'position': 'fixed', 'top': halfWindowHeight / 2 * 1.55 + 'px', 'left': quarterWindowWidth * 3 }).animate({ 'left': halfWindowWidth + 46 + 'px', 'top': halfWindowHeight + 'px' }, 1000);
+    iconTwoAnimate: function iconTwoAnimate(basketPos, iconPos) {
+        $('#section-three-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'height': '110px', 'z-index': '2991', 'margin-left': '-120px' }, 1000);
     },
-    iconThreeAnimate: function iconThreeAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-3').css({ 'position': 'fixed', 'top': halfWindowHeight / 2 * 1.55 + 'px', 'left': quarterWindowWidth }).animate({ 'left': halfWindowWidth - 100 + 'px', 'top': halfWindowHeight + 'px' }, 1000);
+    iconThreeAnimate: function iconThreeAnimate(basketPos, iconPos) {
+        $('#section-four-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'z-index': '2992', 'margin-left': '-10px' }, 1000);
     },
-    iconFourAnimate: function iconFourAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#basket-item-4').css({ 'position': 'fixed', 'top': halfWindowHeight / 2 * 1.55 + 'px', 'left': quarterWindowWidth * 3 }).animate({ 'left': halfWindowWidth + 'px', 'top': halfWindowHeight + 'px' }, 1000);
+    iconFourAnimate: function iconFourAnimate(basketPos, iconPos) {
+        $('#section-five-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '42px' }, 1000);
+    },
+
+    finalePosition: function finalePosition(basketPosition) {
+        $('#picnic-basket').css({ 'position': 'absolute', 'top': basketPosition.top + 'px', 'left': '50%' + 'px', 'margin-left': '-160px' });
+
+        $('#section-two-icon').addClass('hidden');
+        $('#section-three-icon').addClass('hidden');
+        $('#section-four-icon').addClass('hidden');
+        $('#section-five-icon').addClass('hidden');
+
+        $('.about-img-icon').animate({ 'opacity': '1' }, 1000);
+
+        $('#section-two-icon-hidden').removeClass('hidden');
+        $('#section-three-icon-hidden').removeClass('hidden');
+        $('#section-four-icon-hidden').removeClass('hidden');
+        $('#section-five-icon-hidden').removeClass('hidden');
     }
 
 };
 
 },{}],2:[function(require,module,exports){
-"use strict";
-/**
- * FinaleAnimate
- * @constructor
- */
-
-module.exports = {
-
-    iconOneFinalePos: function iconOneFinalePos(quarterWindowWidth, halfWindowHeight) {
-        $('#section-one-icon').css({ 'position': 'absolute', 'left': quarterWindowWidth * 1 + 'px', 'top': halfWindowHeight * 11 + 'px' });
-    },
-    iconTwoFinalePos: function iconTwoFinalePos(quarterWindowWidth, halfWindowHeight) {
-        $('#section-two-icon').css({ 'position': 'absolute', 'left': quarterWindowWidth * 2 + 'px', 'top': halfWindowHeight * 11 + 'px' });
-    },
-    iconThreeFinalePos: function iconThreeFinalePos(quarterWindowWidth, halfWindowHeight) {
-        $('#section-three-icon').css({ 'position': 'absolute', 'left': quarterWindowWidth * 3 + 'px', 'top': halfWindowHeight * 11 + 'px' });
-    },
-    iconFourFinalePos: function iconFourFinalePos(quarterWindowWidth, halfWindowHeight) {
-        $('#section-four-icon').css({ 'position': 'absolute', 'left': quarterWindowWidth * 4 + 'px', 'top': halfWindowHeight * 11 + 'px' });
-    }
-
-};
-
-},{}],3:[function(require,module,exports){
-"use strict";
-/**
- * FixedPosition
- * @constructor
- */
-
-module.exports = {
-
-    centerBasketPos: function centerBasketPos(quarterWindowWidth, halfWindowWidth, halfWindowHeight) {
-        $('#picnic-basket').css({ 'left': halfWindowWidth + 'px', 'top': halfWindowHeight + 'px' });
-    },
-    iconOneBasketPos: function iconOneBasketPos(halfWindowWidth, halfWindowHeight) {
-        $('#section-one-icon').css({ 'position': 'fixed', 'left': halfWindowWidth + 50 + 'px', 'top': halfWindowHeight + 'px' });
-    },
-    iconTwoBasketPos: function iconTwoBasketPos(halfWindowWidth, halfWindowHeight) {
-        $('#section-two-icon').css({ 'position': 'fixed', 'left': halfWindowWidth + 'px', 'top': halfWindowHeight + 'px' });
-    },
-    iconThreeBasketPos: function iconThreeBasketPos(halfWindowWidth, halfWindowHeight) {
-        $('#section-three').css({ 'position': 'fixed', 'left': halfWindowWidth - 100 + 'px', 'top': halfWindowHeight + 'px' });
-    },
-    iconFourBasketPos: function iconFourBasketPos(halfWindowWidth, halfWindowHeight) {
-        $('#section-four').css({ 'position': 'fixed', 'left': halfWindowWidth - 150 + 'px', 'top': halfWindowHeight + 'px' });
-    }
-
-};
-
-},{}],4:[function(require,module,exports){
-"use strict";
-
-/**
- * AnimateToPosition
- * @constructor
- */
-
-module.exports = {
-
-    iconOneAnimate: function iconOneAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight) {
-        $('#section-one-icon').css({ 'top': windowHeight + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth + 'px' });
-    },
-    iconTwoAnimate: function iconTwoAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight) {
-        $('#section-two-icon').css({ 'top': windowHeight * 2 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth * 3 + 'px' });
-    },
-    iconThreeAnimate: function iconThreeAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight) {
-        $('#section-three-icon').css({ 'top': windowHeight * 3 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth + 'px' });
-    },
-    iconFourAnimate: function iconFourAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight) {
-        $('#section-four-icon').css({ 'top': windowHeight * 4 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth * 3 + 'px' });
-    }
-
-};
-
-},{}],5:[function(require,module,exports){
-"use strict";
-/**
- * StartPositions
- * @constructor
- */
-
-module.exports = {
-
-    centerBasketPos: function centerBasketPos(halfWindowHeight, halfWindowWidth) {
-        $('#picnic-basket').css('left', halfWindowWidth + 'px').css('top', halfWindowHeight + halfWindowHeight / 1.5 + 'px');
-    },
-    iconOneBasketPos: function iconOneBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth) {
-        $('#section-one-icon').css({ 'position': 'absolute', 'top': windowHeight + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth + 'px' });
-    },
-    iconTwoBasketPos: function iconTwoBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth) {
-        $('#section-two-icon').css({ 'position': 'absolute', 'top': windowHeight * 2 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth * 3 + 'px' });
-    },
-    iconThreeBasketPos: function iconThreeBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth) {
-        $('#section-three-icon').css({ 'position': 'absolute', 'top': windowHeight * 3 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth + 'px' });
-    },
-    iconFourBasketPos: function iconFourBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth) {
-        $('#section-four-icon').css({ 'position': 'absolute', 'top': windowHeight * 4 + halfWindowHeight - basketItemHeight + 'px', 'left': quarterWindowWidth * 3 + 'px' });
-    }
-
-};
-
-},{}],6:[function(require,module,exports){
 'use strict';
 
+/**
+ * The script is only to run on devices greater than or equal to 992px.
+ * To do this I check whether a class has changed to its media query value for devices under 992px.
+ * If the media query value has changed the code will not run.
+ */
+
 var AnimateToPosition = require('./PicnicScroll/AnimateToPosition');
-var ReAnimateToPosition = require('./PicnicScroll/ReAnimateToPosition');
-var StartPosition = require('./PicnicScroll/StartPosition');
-var FixToPosition = require('./PicnicScroll/FixToPosition');
-var FinaleAnimate = require('./PicnicScroll/FinaleAnimate');
-var windowHeight;
-var halfWindowHeight;
-var windowWidth;
-var halfWindowWidth;
-var quarterWindowWidth;
-var basketItemHeight;
-var basketItemWidth;
-var siteNavHeight;
-var itemBasketOne = true;
-var itemBasketTwo = true;
-var itemBasketThree = true;
-var itemBasketFour = true;
-var lastScrollTop = 0;
-var scrollDirection = 0;
-var scrollFlag = 0;
 
-/**
- * Document Ready
- */
+var runCode = false;
+
 $(document).ready(function () {
-    windowHeight = $(window).height();
-    halfWindowHeight = windowHeight / 2;
-    windowWidth = $(window).width();
-    halfWindowWidth = windowWidth / 2;
-    quarterWindowWidth = windowWidth / 4;
-    basketItemHeight = $('.home-icon').height();
-    basketItemWidth = $('.home-icon').width();
-    siteNavHeight = $('#main-nav').height();
-    StartPosition.centerBasketPos(halfWindowHeight, halfWindowWidth);
-    StartPosition.iconOneBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconTwoBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconThreeBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-    StartPosition.iconFourBasketPos(windowHeight, halfWindowHeight, basketItemHeight, quarterWindowWidth);
-});
-
-/**
- * Scroll listener
- */
-$(window).scroll(function () {
-    if (scrollFlag === 0) {
-        /*
-         * Get Scroll Position INT.
+    /**
+     * Check wether
+     */
+    checkSize();
+    if (runCode) {
+        /**
+         * Set variables to be used in logic below.
          */
-        scroll = $(window).scrollTop();
+        var windowHeight;
+        var halfWindowHeight;
+        var quarterWindowHeight;
+        var windowWidth;
+        var halfWindowWidth;
+        var quarterWindowWidth;
+        var siteNavHeight;
+        var itemBasketOne = true;
+        var itemBasketTwo = true;
+        var itemBasketThree = true;
+        var itemBasketFour = true;
+        var finalePosition = true;
+        var lastScrollTop = 0;
+        var scrollDirection = 0;
+        var scrollFlag = 0;
+        var basketItemHeight = 220;
+        var basketPos;
 
-        /*
-         * Get Scroll Direction
+        /**
+         * Document Ready
          */
-        var scrollTop = $(this).scrollTop();
-        if (scrollTop > lastScrollTop) {
-            scrollDirection = 1; //up
-        } else {
-            scrollDirection = 0; //down
-        }
-        lastScrollTop = scrollTop;
+        windowHeight = $(window).height();
+        halfWindowHeight = windowHeight / 2;
+        quarterWindowHeight = windowHeight / 4;
+        windowWidth = $(window).width();
+        halfWindowWidth = windowWidth / 2;
+        quarterWindowWidth = windowWidth / 4;
+        basketPos = halfWindowHeight + quarterWindowHeight - basketItemHeight / 4;
+        siteNavHeight = $('#main-nav').height();
+        $('#picnic-basket').css({ 'left': '50%', 'margin-left': '-160px', 'top': basketPos + 'px' });
+        $('.about-img-icon').css({ 'opacity': '0' });
+        /**
+         * Scroll listener
+         */
+        $(window).scroll(function () {
+            if (scrollFlag === 0) {
+                /*
+                 * Get Scroll Position INT.
+                 */
+                var scroll = $(window).scrollTop();
+                console.log(scroll);
 
-        /*
-         * Scroll down Animations triggers
-         */
-        if (scroll > windowHeight && itemBasketOne && scrollDirection) {
-            AnimateToPosition.iconOneAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketOne = false;
-        } else if (scroll > windowHeight * 2 && itemBasketTwo && scrollDirection) {
-            AnimateToPosition.iconTwoAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketTwo = false;
-        } else if (scroll > windowHeight * 3 && itemBasketThree && scrollDirection) {
-            AnimateToPosition.iconThreeAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketThree = false;
-        } else if (scroll > windowHeight * 4 && itemBasketFour && scrollDirection) {
-            AnimateToPosition.iconFourAnimate(quarterWindowWidth, halfWindowWidth, halfWindowHeight);
-            itemBasketFour = false;
-        }
-
-        /*
-         * Scroll up Animations triggers
-         */
-        if (scroll < windowHeight && itemBasketOne === false && !scrollDirection) {
-            ReAnimateToPosition.iconOneAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketOne = true;
-        } else if (scroll < windowHeight * 2 && itemBasketTwo === false && !scrollDirection) {
-            ReAnimateToPosition.iconTwoAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketTwo = true;
-        } else if (scroll < windowHeight * 3 && itemBasketThree === false && !scrollDirection) {
-            ReAnimateToPosition.iconThreeAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketThree = true;
-        } else if (scroll < windowHeight * 4 && itemBasketFour === false && !scrollDirection) {
-            ReAnimateToPosition.iconFourAnimate(windowHeight, halfWindowHeight, quarterWindowWidth, basketItemHeight);
-            itemBasketFour = true;
-        }
+                /*
+                 * Scroll down Animations triggers
+                 */
+                if (scroll > windowHeight && itemBasketOne) {
+                    var iconPosition = $('#section-two-icon').offset();
+                    AnimateToPosition.iconOneAnimate(basketPos, iconPosition);
+                    itemBasketOne = false;
+                } else if (scroll > windowHeight * 2 && itemBasketTwo) {
+                    var iconPosition = $('#section-three-icon').offset();
+                    AnimateToPosition.iconTwoAnimate(basketPos, iconPosition);
+                    itemBasketTwo = false;
+                } else if (scroll > windowHeight * 3 && itemBasketThree) {
+                    var iconPosition = $('#section-four-icon').offset();
+                    AnimateToPosition.iconThreeAnimate(basketPos, iconPosition);
+                    itemBasketThree = false;
+                } else if (scroll > windowHeight * 4 && itemBasketFour) {
+                    var iconPosition = $('#section-five-icon').offset();
+                    AnimateToPosition.iconFourAnimate(basketPos, iconPosition);
+                    itemBasketFour = false;
+                } else if (scroll > 5220 && finalePosition) {
+                    var basketPosition = $('#picnic-basket').offset();
+                    AnimateToPosition.finalePosition(basketPosition);
+                    finalePosition = false;
+                }
+            }
+        });
     }
 });
 
-// $('#footer-section').click(function(quarterWindowWidth, halfWindowHeight) {
-//     FinaleAnimate.iconOneFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconTwoFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconThreeFinalePos(quarterWindowWidth, halfWindowHeight);
-//     FinaleAnimate.iconFourFinalePos(quarterWindowWidth, halfWindowHeight);
-// });
+/**
+ * This function checks a class to see if it has changed to its media query value.
+ */
+function checkSize() {
+    if ($(".panel-icon").css("margin-top") !== "-80px" || $(".panel-icon").css("margin-top") !== "-50px;") {
+        runCode = true;
+    }
+}
 
-},{"./PicnicScroll/AnimateToPosition":1,"./PicnicScroll/FinaleAnimate":2,"./PicnicScroll/FixToPosition":3,"./PicnicScroll/ReAnimateToPosition":4,"./PicnicScroll/StartPosition":5}]},{},[6]);
+},{"./PicnicScroll/AnimateToPosition":1}]},{},[2]);
 
 //# sourceMappingURL=picnic-scroll.js.map
