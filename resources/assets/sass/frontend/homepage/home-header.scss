@@ -1,10 +1,10 @@
 .home-header {
-    height: 80vh;
+    height: 100vh;
   p {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
-    line-height: 38px;
+    line-height: 34px;
     margin-bottom: 28px;
   }
   h1 {
@@ -18,7 +18,7 @@
 
 @media (max-width: 767px) {
   .home-header {
-    height: 90vh;
+    height: 100vh;
     p {
       font-weight: 500;
       font-size: 16px;

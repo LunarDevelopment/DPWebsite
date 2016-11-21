@@ -6,7 +6,8 @@
                 comes to your marketing, but with our range of marketing services available, we're sure you'll find
                 the perfect fit. Take a look at what we can offer to make your marketing strategy a success!</p>
             <!----- PICNIC BASKET ----->
-            <img class="home-basket-tablet hidden-md hidden-lg" src="/img/website/basket.svg" alt="Picnic basket">
+            <img class="home-basket-tablet
+            hidden-lg" src="/img/website/basket.svg" alt="Picnic basket">
         </div>
     </div>
 </div>

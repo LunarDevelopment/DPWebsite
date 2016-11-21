@@ -7,20 +7,20 @@
 module.exports = {
 
     iconOneAnimate: function(basketPos, iconPos) {
-        $('#section-two-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
-            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '-152'}, 1000);
+        $('#section-two-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px', 'z-index': '2990',})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'margin-left': '-152'}, 1000);
     },
     iconTwoAnimate: function(basketPos, iconPos) {
-        $('#section-three-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
-            .animate({'left': '50%','top':basketPos + 'px', 'height': '110px', 'z-index': '2991', 'margin-left': '-120px'}, 1000);
+        $('#section-three-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px', 'z-index': '2991',})
+            .animate({'left': '50%','top':basketPos + 'px', 'height': '110px', 'margin-left': '-120px'}, 1000);
     },
     iconThreeAnimate: function(basketPos, iconPos) {
-        $('#section-four-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
-            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2992', 'margin-left': '-10px'}, 1000);
+        $('#section-four-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px', 'z-index': '2992',})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'margin-left': '-10px'}, 1000);
     },
     iconFourAnimate: function(basketPos, iconPos) {
-        $('#section-five-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px'})
-            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'z-index': '2990', 'margin-left': '42px'}, 1000);
+        $('#section-five-icon').css({'position': 'fixed','top': '30%','left': iconPos.left + 180 + 'px', 'z-index': '2990'})
+            .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'margin-left': '42px'}, 1000);
     },
 
     finalePosition: function(basketPosition) {

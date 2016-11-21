@@ -209,9 +209,10 @@ form {
 #app-layout {
   //margin-top: 210px !important;
 }
-
-.full-height {
-  height: 100vh;
+@media (min-width: 1200px) {
+  .full-height {
+    min-height: 100vh;
+  }
 }
 
 .logged-in-as {

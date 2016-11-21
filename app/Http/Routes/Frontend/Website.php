@@ -36,16 +36,9 @@ Route::group(['namespace' => 'Website'], function ()
         \Debugbar::disable();
         return view('frontend.design');
     })->name('frontend.design');
-    Route::get('/contact-us', function ()
-    {
-        \Debugbar::disable();
-        return view('frontend.contact-us');
-    })->name('frontend.contact-us');
-    Route::get('/subscribe', function ()
-    {
-        \Debugbar::disable();
-        return view('frontend.subscribe');
-    })->name('frontend.subscribe');
+    Route::get('/contact-us', 'ContactController@index')->name('frontend.contact-us');
+    Route::get('/subscribe', 'SubscribeController@index')->name('frontend.subscribe');
+    Route::get('/subscribe/submit', 'SubscribeController@submit');
     Route::get('/privacy-policy', function ()
     {
         \Debugbar::disable();

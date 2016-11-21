@@ -1,6 +1,7 @@
-<div class="container-fluid bg-grass home-footer" style="position: relative;">
-    <img class="home-basket-tablet-footer hidden-md hidden-lg" src="/img/website/basket.svg" alt="Picnic basket">
-    <siv class="container">
+<div id="final-trigger"></div>
+<div id="section-six" class="container-fluid bg-grass home-footer full-height" style="position: relative;">
+    <img class="home-basket-tablet-footer hidden-lg" src="/img/website/basket.svg" alt="Picnic basket">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <div class="row">
@@ -11,19 +12,19 @@
                 <div class="row">
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Marketing Lists</h3>
-                        <img class="about-img-icon" src="/img/website/data.svg">
+                        <a href="{{ route('frontend.marketing-lists') }}"><img class="about-img-icon" src="/img/website/data.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Managed Email Campaigns</h3>
-                        <img class="about-img-icon" src="/img/website/campaigns.svg">
+                        <a href="{{ route('frontend.managed-email-campaigns') }}"><img class="about-img-icon" src="/img/website/campaigns.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Design</h3>
-                        <img class="about-img-icon" src="/img/website/designs.svg">
+                        <a href="{{ route('frontend.design') }}"><img class="about-img-icon" src="/img/website/designs.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">(CPE) Email Marketing</h3>
-                        <img class="about-img-icon" src="/img/website/cpe.svg">
+                        <a href="{{ route('frontend.cpe-campaigns') }}"><img class="about-img-icon" src="/img/website/cpe.svg"></a>
                     </div>
                 </div>
                 <div class="row">
@@ -31,10 +32,10 @@
                         <p class="text-white">Now that you’ve seen our Picnic of digital marketing services, it's time
                             to create a basket that's full to the brim with strategies that will get you results.
                         </p>
-                        <a class="btn btn-call-to-action" href="/">Get Started</a>
+                        <a class="btn btn-call-to-action" href="{{ route('frontend.contact-us') }}">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
-    </siv>
+    </div>
 </div>
