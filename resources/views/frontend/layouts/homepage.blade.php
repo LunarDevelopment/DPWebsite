@@ -5,7 +5,6 @@
 <div id="section-one"></div>
 @include('frontend.includes.nav')
 
-@include('includes.partials.messages')
 @yield('content')
 
 @include('frontend.includes.footer-body')

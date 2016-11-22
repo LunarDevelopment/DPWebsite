@@ -21,8 +21,8 @@ module.exports = {
         $('#section-five-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px', 'z-index': '2990' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'margin-left': '42px' }, 1000);
     },
 
-    finalePosition: function finalePosition(basketPosition) {
-        $('#picnic-basket').css({ 'position': 'absolute', 'top': basketPosition.top + 'px', 'left': '50%' + 'px', 'margin-left': '-160px' });
+    finalePosition: function finalePosition(basketPosition, finaleBasketPosition) {
+        $('#picnic-basket').css({ 'position': 'absolute', 'top': finaleBasketPosition + 'px', 'left': '50%' + 'px', 'margin-left': '-160px' });
 
         $('#section-two-icon').addClass('hidden');
         $('#section-three-icon').addClass('hidden');
@@ -77,6 +77,14 @@ $(document).ready(function () {
             var scrollFlag = 0;
             var basketItemHeight = 220;
             var basketPos;
+            var basketTrigger;
+            var initialBasketPos;
+            var picnicAnimated = true;
+            var animationOne = $('#section-two').offset();
+            var animationTwo = $('#section-three').offset();
+            var animationThree = $('#section-four').offset();
+            var animationFour = $('#section-five').offset();
+            var finaleBasketPosition;
 
             /**
              * Document Ready
@@ -87,8 +95,14 @@ $(document).ready(function () {
             windowWidth = $(window).width();
             basketPos = halfWindowHeight + quarterWindowHeight - basketItemHeight / 4;
             siteNavHeight = $('#main-nav').height();
-            $('#picnic-basket').css({ 'left': '50%', 'margin-left': '-160px', 'top': basketPos + 'px' });
+            // $('#picnic-basket').css({'left': '50%', 'margin-left': '-160px', 'top': basketPos + 'px'});
             $('.about-img-icon').css({ 'opacity': '0' });
+
+            //Get basket position from top
+            initialBasketPos = $('#picnic-basket').offset();
+            //Get Header 1 text from top
+            basketTrigger = $('#headerOneText').offset();
+
             /**
              * Scroll listener
              */
@@ -105,28 +119,40 @@ $(document).ready(function () {
                      */
                     var finalTrigger = $('#final-trigger').offset();
 
+                    //Work out fixed position
+                    var basketBeforeAnimation = $('#picnic-basket').offset().top - $('window').scrollTop();
+
+                    //
+                    finaleBasketPosition = $('#get-started').offset();
+
                     /*
                      * Scroll down Animations triggers
                      */
-                    if (scroll > windowHeight && itemBasketOne) {
+                    if (scroll > basketTrigger.top && picnicAnimated) {
+                        $('#picnic-basket').css({ 'position': 'fixed', 'top': basketBeforeAnimation, 'left': '50%', 'margin-left': '-160px', 'z-index': '3000' }).animate({ 'top': basketPos + 'px' });
+                        picnicAnimated = false;
+                    }
+
+                    if (scroll > animationOne.top && itemBasketOne) {
                         var iconPosition = $('#section-two-icon').offset();
                         AnimateToPosition.iconOneAnimate(basketPos, iconPosition);
                         itemBasketOne = false;
-                    } else if (scroll > windowHeight * 2 && itemBasketTwo) {
+                    } else if (scroll > animationTwo.top && itemBasketTwo) {
                         var iconPosition = $('#section-three-icon').offset();
                         AnimateToPosition.iconTwoAnimate(basketPos, iconPosition);
                         itemBasketTwo = false;
-                    } else if (scroll > windowHeight * 3 && itemBasketThree) {
+                    } else if (scroll > animationThree.top && itemBasketThree) {
                         var iconPosition = $('#section-four-icon').offset();
                         AnimateToPosition.iconThreeAnimate(basketPos, iconPosition);
                         itemBasketThree = false;
-                    } else if (scroll > windowHeight * 4 && itemBasketFour) {
+                    } else if (scroll > animationFour.top && itemBasketFour) {
                         var iconPosition = $('#section-five-icon').offset();
                         AnimateToPosition.iconFourAnimate(basketPos, iconPosition);
                         itemBasketFour = false;
                     } else if (scroll > finalTrigger.top - 10 && finalePosition) {
                         var basketPosition = $('#picnic-basket').offset();
-                        AnimateToPosition.finalePosition(basketPosition);
+                        AnimateToPosition.finalePosition(basketPosition, finaleBasketPosition.top);
+                        console.log(finaleBasketPosition.top);
                         finalePosition = false;
                     }
                 }

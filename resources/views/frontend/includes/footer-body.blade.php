@@ -11,9 +11,9 @@
             <div class="col-sm-3 footer-social">
                 <p>
                     <strong>Social:</strong><br>
-                    <a href="#"><img class="social-icon" src="/img/website/twitter.svg"></a>
-                    <a href="#"><img class="social-icon" src="/img/website/linkedin.svg"></a>
-                    <a href="#"><img class="social-icon" src="/img/website/instagram.svg"></a>
+                    <a href="https://twitter.com/digitalpicnicuk"><img class="social-icon" src="/img/website/twitter.svg"></a>
+                    <a href="https://www.linkedin.com/company/direct-mail-associates-dma-data-www-dmadata-co-uk"><img class="social-icon" src="/img/website/linkedin.svg"></a>
+                    <a href="https://www.instagram.com/digitalpicnicltd/"><img class="social-icon" src="/img/website/instagram.svg"></a>
                 </p>
                 <p>
                     <strong>Subscribe:</strong><br>

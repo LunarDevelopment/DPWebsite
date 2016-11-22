@@ -28,10 +28,11 @@
 @include('includes.partials.logged-in-as')
 @include('frontend.includes.nav')
 
-@include('includes.partials.messages')
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            @include('includes.partials.messages')
             @yield('content')
         </div>
     </div>

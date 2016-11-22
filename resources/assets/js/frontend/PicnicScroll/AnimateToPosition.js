@@ -23,8 +23,8 @@ module.exports = {
             .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'margin-left': '42px'}, 1000);
     },
 
-    finalePosition: function(basketPosition) {
-        $('#picnic-basket').css({'position': 'absolute','top': basketPosition.top + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
+    finalePosition: function(basketPosition, finaleBasketPosition) {
+        $('#picnic-basket').css({'position': 'absolute','top': finaleBasketPosition + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
 
         $('#section-two-icon').addClass('hidden');
         $('#section-three-icon').addClass('hidden');

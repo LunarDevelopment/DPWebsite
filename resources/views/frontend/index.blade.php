@@ -3,7 +3,7 @@
 @section('content')
     <div class="alert alert-dismissible alert-cookies" role="alert">
         <div class="col-md-8 col-md-offset-2">
-            <img class="cookie" src="/img/website/Cookie.svg">
+            <img class="cookie" src="/img/website/cookie.svg">
             <p><strong>There's cookies in our Picnic basket!</strong> If you continue to use our website,
                 we'll assume you're happy with our use of cookies.
                 <button type="button" class="cookies-close" data-dismiss="alert" aria-label="Close"><span
@@ -11,8 +11,6 @@
             </p>
         </div>
     </div>
-    <!----- PICNIC BASKET ----->
-    <img id="picnic-basket" class="home-basket hidden-sm hidden-xs hidden-md" src="/img/website/basket.svg" alt="Picnic basket">
     <!----- SCROLL BAR ----->
     <div id="home-scroll" class="home-scroller text-center hidden-sm hidden-xs hidden-md">
         <a href="#section-one"><img id="up-nav" src="/img/website/trans.png"></a>

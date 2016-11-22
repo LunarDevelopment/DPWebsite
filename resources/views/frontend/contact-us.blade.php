@@ -3,27 +3,27 @@
 @section('content')
     <h1 class="text-success">Get in touch..</h1>
     <p>To make an enquiry fill in your details below and we’ll be in touch soon.</p>
-    <form>
+    <form action="/contact-us/submit">
         <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="*Full Name">
+            <input name="name" type="text" class="form-control" id="name" placeholder="*Full Name">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="company-name" placeholder="*Company Name">
+            <input name="company" type="text" class="form-control" id="company" placeholder="*Company Name">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" id="phone-number" placeholder="*Phone Number">
+            <input name="phone" type="text" class="form-control" id="phone" placeholder="*Phone Number">
         </div>
         <div class="form-group">
-            <input type="email" class="form-control" id="phone-number" placeholder="*Email Address">
+            <input name="email" type="email" class="form-control" id="email" placeholder="*Email Address">
         </div>
         <div class="form-group">
-            <select class="form-control" id="preferred method of contact">
-                <option>Phone me</option>
-                <option>Email me</option>
+            <select name="method_of_contact" class="form-control" id="preferred method of contact">
+                <option value="phone">Phone me</option>
+                <option value="email">Email me</option>
             </select>
         </div>
         <div class="form-group">
-            <textarea class="form-control" name="message" rows="4" placeholder="*What would you like to know?"></textarea>
+            <textarea class="form-control" name="body" rows="4" placeholder="*What would you like to know?"></textarea>
         </div>
         <p class="small-print pull-left">Fields marked with * are required</p>
         <button type="submit" class="btn btn-success pull-right">Submit</button>
@@ -46,5 +46,9 @@
 @endsection
 
 @section('after-scripts-end')
-
+    <script>
+        $('form').submit(function(){
+            $(this).find('button[type=submit]').prop('disabled', true);
+        });
+    </script>
 @stop

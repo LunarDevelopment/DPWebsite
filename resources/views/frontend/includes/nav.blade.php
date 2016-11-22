@@ -2,7 +2,7 @@
     <div class="row">
         <!-- Company Logo -->
         <div id="logo" class="header-logo">
-            <a href="/"><img src="/img/website/LogoWithBox.png" alt="Digital Picnic Logo"></a>
+            <a href="/"><img src="/img/website/logowithbox.png" alt="Digital Picnic Logo"></a>
         </div>
         <!-- Subscribe Bar -->
         <div class="container-fluid header-subscribe">
@@ -75,7 +75,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="/img/website/DPlogo.svg"></a>
+                    <a class="navbar-brand" href="#"><img src="/img/website/dplogo.svg"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->

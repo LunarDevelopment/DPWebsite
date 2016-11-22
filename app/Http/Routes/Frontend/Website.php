@@ -37,6 +37,7 @@ Route::group(['namespace' => 'Website'], function ()
         return view('frontend.design');
     })->name('frontend.design');
     Route::get('/contact-us', 'ContactController@index')->name('frontend.contact-us');
+    Route::get('/contact-us/submit', 'ContactController@submit');
     Route::get('/subscribe', 'SubscribeController@index')->name('frontend.subscribe');
     Route::get('/subscribe/submit', 'SubscribeController@submit');
     Route::get('/privacy-policy', function ()

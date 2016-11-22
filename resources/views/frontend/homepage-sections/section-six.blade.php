@@ -32,7 +32,7 @@
                         <p class="text-white">Now that you’ve seen our Picnic of digital marketing services, it's time
                             to create a basket that's full to the brim with strategies that will get you results.
                         </p>
-                        <a class="btn btn-call-to-action" href="{{ route('frontend.contact-us') }}">Get Started</a>
+                        <a id="get-started" class="btn btn-call-to-action" href="{{ route('frontend.contact-us') }}">Get Started</a>
                     </div>
                 </div>
             </div>
