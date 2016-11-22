@@ -19,16 +19,16 @@
             <a href="{{ route('frontend.marketing-lists') }}"><img class="about-img-icon" src="/img/website/data.svg"></a>
         </div>
         <div class="col-sm-3 col-xs-6 text-center">
-            <h3 class="text-yellow about-us-img-text">(CPE) Email Marketing</h3>
-            <a href="{{ route('frontend.cpe-campaigns') }}"><img class="about-img-icon" src="/img/website/cpe.svg"></a>
-        </div>
-        <div class="col-sm-3 col-xs-6 text-center">
             <h3 class="text-turquoise about-us-img-text">Managed Email Campaigns</h3>
             <a href="{{ route('frontend.managed-email-campaigns') }}"><img class="about-img-icon" src="/img/website/campaigns.svg"></a>
         </div>
         <div class="col-sm-3 col-xs-6 text-center">
             <h3 class="text-danger about-us-img-text">Design</h3>
             <a href="{{ route('frontend.design') }}"><img class="about-img-icon" src="/img/website/designs.svg"></a>
+        </div>
+        <div class="col-sm-3 col-xs-6 text-center">
+            <h3 class="text-yellow about-us-img-text">(CPE) Email Marketing</h3>
+            <a href="{{ route('frontend.cpe-campaigns') }}"><img class="about-img-icon" src="/img/website/cpe.svg"></a>
         </div>
     </div>
 @endsection

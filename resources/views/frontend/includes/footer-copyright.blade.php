@@ -7,7 +7,7 @@
                 Data Protection Number CSN5772388</p>
         </div>
         <div class="col-md-6 hidden-xs">
-            <a href="https://dma.org.uk/"><img class="footer-dma pull-right" src="\img\website\dma.svg"></a>
+            <a href="http://dma.org.uk/company/digital-picnic" target="_blank"><img class="footer-dma pull-right" src="\img\website\dma.svg"></a>
         </div>
     </div>
 </div>

@@ -46,7 +46,7 @@
     <div class="container packages">
         <div class="row">
             <div class="col-md-12">
-                <p>Call us today on <a href="tel:+441912359569">0191 235 9569</a> to find out how the Picnic can help you!</p>
+                <p>So you’ve sorted your contacts and are ready to get in touch, but how do you do it? Whether you're an email marketing veteran or...</p>
             </div>
         </div>
     </div>

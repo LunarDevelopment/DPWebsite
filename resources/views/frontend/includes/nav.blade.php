@@ -41,9 +41,9 @@
                                         class="caret"></span> {{ trans('navs.frontend.products') }}</a>
                             <ul class="dropdown-menu">
                                 <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
-                                <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
                                 <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
                                 <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
+                                <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
                             </ul>
                         </li>
                         <li class="dropdown parent-link-style">
@@ -87,9 +87,9 @@
                             <li>{{ link_to_route('frontend.meet-the-team', trans('navs.frontend.meet-the-team')) }}</li>
                             <li>{{ link_to_route('frontend.products', trans('navs.frontend.products')) }}</li>
                             <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
-                            <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
                             <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
                             <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
+                            <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
                             <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
                             <li>{{ link_to_route('frontend.subscribe', trans('navs.frontend.subscribe')) }}</li>
                         </ul>

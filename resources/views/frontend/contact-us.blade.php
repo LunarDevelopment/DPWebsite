@@ -34,7 +34,7 @@
             Digital Picnic,<br>
             The Picnic Area,<br>
             1 Pink Lane,<br>
-            Newcastle,<br>
+            Newcastle Upon Tyne,<br>
             NE1 5DW</p>
             <p><strong class="text-success">Email:</strong> info@digital-picnic.email</p>
             <p><strong class="text-success">Call:</strong> 0191 235 9569</p>
