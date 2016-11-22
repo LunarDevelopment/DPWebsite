@@ -201,11 +201,6 @@ return [
          * Has to override the Collective\Html\HtmlServiceProvider form singleton
          */
         App\Providers\MacroServiceProvider::class,
-
-        /*
-         * Site map generator
-         */
-        Watson\Sitemap\SitemapServiceProvider::class,
     ],
 
     /*
@@ -251,7 +246,6 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Sitemap'   => Watson\Sitemap\SitemapServiceProvider::class,
 
         /*
          * Third Party Aliases
