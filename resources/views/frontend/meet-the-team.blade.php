@@ -56,8 +56,8 @@
                             <p>{{ $team_member['description'] }}</p>
                             @if($team_member['linkedin_url'] != '')
                                 <a href="{{ $team_member['linkedin_url'] }}"><img class="social-icon"
-                                                                                  src="/img/website/LinkedIn.svg"></a>
-                                <a class="hidden-xs" href="{{ $team_member['linkedin_url'] }}">{{ $team_member['linkedin_url'] }}</a>
+                                                                                  src="/img/website/linkedin.svg"></a>
+                                <a class="hidden-xs" href="{{ $team_member['linkedin_url'] }}">Connect with me on linkedin</a>
                             @endif
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->

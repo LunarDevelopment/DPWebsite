@@ -23,8 +23,10 @@ module.exports = {
             .animate({'left': '50%','top':basketPos + 'px', 'width': '110px', 'margin-left': '42px'}, 1000);
     },
 
-    finalePosition: function(basketPosition, finaleBasketPosition) {
-        $('#picnic-basket').css({'position': 'absolute','top': finaleBasketPosition + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
+    finalePosition: function(finaleBasketPosition) {
+        //finaleBasketPosition minus 220 is height of basket
+        //and 220(height of basket) + 70 is Get Started button
+        $('#picnic-basket').css({'position': 'absolute','top': finaleBasketPosition - 220 + 70 + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
 
         $('#section-two-icon').addClass('hidden');
         $('#section-three-icon').addClass('hidden');

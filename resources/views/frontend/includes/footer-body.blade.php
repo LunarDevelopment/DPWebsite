@@ -5,7 +5,7 @@
                 <p><strong>Address:</strong><br>
                     Digital Picnic. The Picnic Area<br>
                     1 Pink Lane, Newcastle. Ne1 5DW</p>
-                <p><strong>Email:</strong> info@digital-picnic.email<br>
+                <p><strong>Email:</strong> <a href="mailto:info@digital-picnic.email">info@digital-picnic.email</a><br>
                     <strong>Phone:</strong> 0191 235 9569</p>
             </div>
             <div class="col-sm-3 footer-social">
@@ -27,7 +27,7 @@
                     <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
                     <li>{{ link_to_route('frontend.faq', trans('navs.frontend.faq')) }}</li>
                     <li>{{ link_to_route('frontend.privacy-policy', trans('navs.frontend.privacy-policy')) }}</li>
-                    <li>{{ link_to_route('frontend.site-map', trans('navs.frontend.site-map')) }}</li>
+                    {{--<li>{{ link_to_route('frontend.site-map', trans('navs.frontend.site-map')) }}</li>--}}
                 </ul>
             </div>
         </div>

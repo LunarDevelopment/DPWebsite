@@ -8256,7 +8256,7 @@ var app = new _vue2.default({
             this.sales = true;
             this.facilities = true;
             this.admin = true;
-            this.directors = false;
+            this.directors = true;
         },
         showMarketing: function showMarketing() {
             this.hideAll();

@@ -18,7 +18,7 @@ var app = new Vue({
             this.sales = true;
             this.facilities = true;
             this.admin = true;
-            this.directors = false;
+            this.directors = true;
         },
         showMarketing: function () {
             this.hideAll();

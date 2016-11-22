@@ -61,3 +61,5 @@ Route::group(['namespace' => 'Website'], function ()
         return view('frontend.products');
     })->name('frontend.products');
 });
+
+Route::get('/sitemap', 'SiteMapController@scan');

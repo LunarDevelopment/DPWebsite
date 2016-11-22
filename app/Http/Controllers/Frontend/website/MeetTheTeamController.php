@@ -57,6 +57,30 @@ class MeetTheTeamController extends Controller
                 complicated deduplications, I work hard every day to ensure you\'re happy with your data selection.',
             ],
             [
+                'name' => 'Andrew Cullen',
+                'role' => 'Senior Account Manager',
+                'image_url' => '/img/website/meet-the-team/Cullen_Orange.jpg',
+                'rollover_url' => '/img/website/meet-the-team/Cullen_Colour.jpg',
+                'linkedin_url' => 'https://uk.linkedin.com/in/andrew-cullen-64a96784',
+                'department' => 'sales',
+                'description' => 'I\'m a Senior Account Manager and I\'ve been working in the sales and marketing 
+                industry for 5 years now. Although I specialise in education marketing, I deal with marketing campaigns 
+                across all sectors. I always strive to get the best for my client\'s and always make sure their 
+                requirements are met.',
+            ],
+            [
+                'name' => 'Andy Wylam',
+                'role' => 'Senior Account Manager',
+                'image_url' => '/img/website/meet-the-team/Wylam_Orange.jpg',
+                'rollover_url' => '/img/website/meet-the-team/Wylam_Colour.jpg',
+                'linkedin_url' => 'https://uk.linkedin.com/in/andywylam',
+                'department' => 'sales',
+                'description' => 'I\'m a Senior Account Manager here at Digital Picnic and have over 15 years of 
+                experience in telesales and marketing. From sole traders to national companies, I love to help clients 
+                with their marketing needs - I\'ll always give you my undefined attention when discussing your marketing
+                strategies.  ',
+            ],
+            [
                 'name' => 'Ben Jackson',
                 'role' => 'Apprentice Developer',
                 'image_url' => '/img/website/meet-the-team/BenJ_Orange.jpg',
@@ -106,18 +130,6 @@ class MeetTheTeamController extends Controller
                   the specified criteria to make sure your data needs are met.',
             ],
             [
-                'name' => 'Andrew Cullen',
-                'role' => 'Senior Account Manager',
-                'image_url' => '/img/website/meet-the-team/Cullen_Orange.jpg',
-                'rollover_url' => '/img/website/meet-the-team/Cullen_Colour.jpg',
-                'linkedin_url' => 'https://uk.linkedin.com/in/andrew-cullen-64a96784',
-                'department' => 'sales',
-                'description' => 'I\'m a Senior Account Manager and I\'ve been working in the sales and marketing 
-                industry for 5 years now. Although I specialise in education marketing, I deal with marketing campaigns 
-                across all sectors. I always strive to get the best for my client\'s and always make sure their 
-                requirements are met.',
-            ],
-            [
                 'name' => 'Darrell Talbott',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/Darrell_Orange.jpg',
@@ -156,7 +168,7 @@ class MeetTheTeamController extends Controller
             ],
             [
                 'name' => 'Gareth Hall',
-                'role' => 'Graphic Design',
+                'role' => 'Graphic Designer',
                 'image_url' => '/img/website/meet-the-team/Gareth_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Gareth_Colour.jpg',
                 'linkedin_url' => 'https://uk.linkedin.com/in/garethrhall',
@@ -204,7 +216,7 @@ class MeetTheTeamController extends Controller
                 the Northumberland coast (if we\'re not jetting off somewhere!). ',
             ],
             [
-                'name' => 'Lewis',
+                'name' => 'Lewis Dimmick',
                 'role' => 'Chief technical Officer',
                 'image_url' => '/img/website/meet-the-team/Lewis_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Lewis_Colour.jpg',
@@ -217,7 +229,7 @@ class MeetTheTeamController extends Controller
             ],
             [
                 'name' => 'Liam Bell',
-                'role' => 'Graphic Design',
+                'role' => 'Graphic Designer',
                 'image_url' => '/img/website/meet-the-team/Liam_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Liam_Colour.jpg',
                 'linkedin_url' => 'https://uk.linkedin.com/in/liam-bell-941080b0',
@@ -272,7 +284,7 @@ class MeetTheTeamController extends Controller
                  assist and provide a solution to complement your existing sales and marketing activity.',
             ],
             [
-                'name' => 'Pete',
+                'name' => 'Pete Noble',
                 'role' => 'director',
                 'image_url' => '/img/website/meet-the-team/Pete_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Pete_Colour.jpg',
@@ -356,7 +368,7 @@ class MeetTheTeamController extends Controller
                 campaigns a success.',
             ],
             [
-                'name' => 'Tom',
+                'name' => 'Tom Armstrong',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Tom_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Tom_Colour.jpg',
@@ -365,18 +377,6 @@ class MeetTheTeamController extends Controller
                 'description' => 'I\'ve  worked within the marketing industry now for 4 years and specialise in B2B 
                 marketing data as a Senior Account Manager here at Digital Picnic. I always strive to get the best 
                 results for my clients through both data and email marketing. ',
-            ],
-            [
-                'name' => 'Andy Wylam',
-                'role' => 'Senior Account Manager',
-                'image_url' => '/img/website/meet-the-team/Wylam_Orange.jpg',
-                'rollover_url' => '/img/website/meet-the-team/Wylam_Colour.jpg',
-                'linkedin_url' => 'https://uk.linkedin.com/in/andywylam',
-                'department' => 'sales',
-                'description' => 'I\'m a Senior Account Manager here at Digital Picnic and have over 15 years of 
-                experience in telesales and marketing. From sole traders to national companies, I love to help clients 
-                with their marketing needs - I\'ll always give you my undefined attention when discussing your marketing
-                strategies.  ',
             ],
         ];
 
