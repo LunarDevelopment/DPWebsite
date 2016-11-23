@@ -16,20 +16,11 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="panel panel-yellow products-panel text-center">
-                <img class="products-panel-icon" src="\img\website\cpe.svg">
-                <h2>(CPE) Email Marketing</h2>
-                <p>Email marketing has an average ROI of £38 for every £1 spent, and you're average order value is
-                    likely to be 3x higher compared to leads from social media... But what if…</p>
-                <a class="btn btn-yellow btn-lg" href="{{ route('frontend.cpe-campaigns') }}">More info</a>
-            </div>
-        </div>
-        <div class="col-sm-6">
             <div class="panel panel-turquoise products-panel text-center">
                 <img class="products-panel-icon" src="\img\website\campaigns.svg">
                 <h2>Managed Email Campaigns</h2>
-                <p>Being able to create your designs in a drag and drop editor might be easy to do, but how do you know
-                    the email will get into the inbox? Your design is…
+                <p>So you’ve sorted your contacts and are ready to get in touch, but how do you do it? Whether you’re an
+                    email marketing veteran or just getting started out...
                 </p>
                 <a class="btn btn-turquoise btn-lg" href="{{ route('frontend.managed-email-campaigns') }}">More info</a>
             </div>
@@ -42,6 +33,15 @@
                     the email will get into the inbox? Your design is…
                 </p>
                 <a class="btn btn-danger btn-lg" href="{{ route('frontend.design') }}">More info</a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-yellow products-panel text-center">
+                <img class="products-panel-icon" src="\img\website\cpe.svg">
+                <h2>(CPE) Email Marketing</h2>
+                <p>Email marketing has an average ROI of £38 for every £1 spent, and you're average order value is
+                    likely to be 3x higher compared to leads from social media... But what if…</p>
+                <a class="btn btn-yellow btn-lg" href="{{ route('frontend.cpe-campaigns') }}">More info</a>
             </div>
         </div>
     </div>
