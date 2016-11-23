@@ -10,7 +10,7 @@
                 <div class="container">
                     <div class="col-md-12">
                         <p class="text-center">Subscribe to our mailing list
-                            <a class="btn btn-success" href="/subscribe">Join the Picnic</a></p>
+                            <a style="margin-left: 15px;" class="btn btn-success" href="/subscribe">Join the Picnic</a></p>
                     </div>
                 </div>
             </div>

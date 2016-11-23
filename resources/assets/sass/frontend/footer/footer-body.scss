@@ -13,16 +13,15 @@
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 200;
+    text-transform: capitalize;
     a {
       color: #FFFFFF;
-    }
-    a:hover {
       text-decoration: none;
     }
   }
   .footer-social {
     .social-icon {
-      margin: 15px 20px 0 0;
+      margin: 15px 15px 15px 0;
       width: 30px;
     }
     p {
@@ -31,11 +30,9 @@
   }
   a {
     color: #ffffff;
-    text-decoration: underline;
   }
   a:hover {
     color: #FFFFFF;
-    text-decoration: underline;
   }
 }
 

@@ -14,10 +14,8 @@
                     <a href="https://twitter.com/digitalpicnicuk" target="_blank"><img class="social-icon" src="/img/website/twitter.svg"></a>
                     <a href="https://www.linkedin.com/company/direct-mail-associates-dma-data-www-dmadata-co-uk" target="_blank"><img class="social-icon" src="/img/website/linkedin.svg"></a>
                     <a href="https://www.instagram.com/digitalpicnicltd/"><img class="social-icon" src="/img/website/instagram.svg" target="_blank"></a>
-                </p>
-                <p>
                     <strong>Subscribe:</strong><br>
-                    <a href="/subscribe" class="btn btn-darkgreen">Join the Picnic</a>
+                    <a style="margin-top: 15px;" href="/subscribe" class="btn btn-darkgreen">Join the Picnic</a>
                 </p>
             </div>
             <div class="col-sm-3" style="border:none;text-transform:capitalize;">
