@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-md-12 col-sm-8 col-sm-offset-2 col-md-offset-0">
             <div class="panel panel-turquoise">
-                <img id="section-three-icon" class="panel-icon" src="\img\website\campaigns.svg">
-                <img id="section-three-icon-hidden" class="panel-icon hidden" src="\img\website\campaigns.svg">
+                <img id="section-three-icon" class="panel-icon-right" src="\img\website\campaigns.svg">
+                <img id="section-three-icon-hidden" class="panel-icon-right hidden" src="\img\website\campaigns.svg">
                 <h1>Managed Email Campaigns</h1>
                 <p>
                     Our email marketing campaigns have been developed to support your business development strategy -

@@ -9,7 +9,7 @@
   bottom: 0;
   width: 100%;
   z-index: 4;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-hill {
@@ -30,6 +30,9 @@
   .footer-cities {
     margin-top: 150px;
   }
+  .footer-city {
+    margin-bottom: 0;
+  }
 }
 
 @media(max-width: 767px) {
@@ -37,6 +40,6 @@
     margin-top: 125px;
   }
   .footer-city {
-    //
+    margin-bottom: 0;
   }
 }

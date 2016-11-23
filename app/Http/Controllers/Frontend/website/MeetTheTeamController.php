@@ -8,11 +8,11 @@ class MeetTheTeamController extends Controller
 {
     public function index()
     {
-        \Debugbar::disable();
 
         $team_members = [
             [
-                'name' => 'Abbie Chaplin',
+                'forename' => 'Abbie',
+                'surname' => 'Chaplin',
                 'role' => 'Administration and Customer Support',
                 'image_url' => '/img/website/meet-the-team/Abbie_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Abbie_Colour.jpg',
@@ -23,7 +23,8 @@ class MeetTheTeamController extends Controller
                 delivery of the Picnic, covering everything from data to payments!',
             ],
             [
-                'name' => 'Adam Gooding',
+                'forename' => 'Adam',
+                'surname' => 'Gooding',
                 'role' => 'Facilities Manager',
                 'image_url' => '/img/website/meet-the-team/Adam_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Adam_Colour.jpg',
@@ -35,7 +36,8 @@ class MeetTheTeamController extends Controller
                 to do! But as they say - great men and great buildings are forged from hard work.',
             ],
             [
-                'name' => 'Adele Bulman',
+                'forename' => 'Adele',
+                'surname' => 'Bulman',
                 'role' => 'Marketing Manager',
                 'image_url' => '/img/website/meet-the-team/Adele_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Adele_Colour.jpg',
@@ -47,7 +49,8 @@ class MeetTheTeamController extends Controller
                 Picnic!',
             ],
             [
-                'name' => 'Amy-May Green',
+                'forename' => 'Amy-May',
+                'surname' => 'Green',
                 'role' => 'Counts Apprentice',
                 'image_url' => '/img/website/meet-the-team/Amy_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Amy_Colour.jpg',
@@ -57,7 +60,8 @@ class MeetTheTeamController extends Controller
                 complicated deduplications, I work hard every day to ensure you\'re happy with your data selection.',
             ],
             [
-                'name' => 'Andrew Cullen',
+                'forename' => 'Andrew',
+                'surname' => 'Cullen',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Cullen_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Cullen_Colour.jpg',
@@ -69,7 +73,8 @@ class MeetTheTeamController extends Controller
                 requirements are met.',
             ],
             [
-                'name' => 'Andy Wylam',
+                'forename' => 'Andy',
+                'surname' => 'Wylam',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Wylam_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Wylam_Colour.jpg',
@@ -81,7 +86,8 @@ class MeetTheTeamController extends Controller
                 strategies.  ',
             ],
             [
-                'name' => 'Ben Jackson',
+                'forename' => 'Benjamin',
+                'surname' => 'Jackson',
                 'role' => 'Apprentice Developer',
                 'image_url' => '/img/website/meet-the-team/BenJ_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/BenJ_Colour.jpg',
@@ -93,7 +99,8 @@ class MeetTheTeamController extends Controller
                 efficient, clean and comprehensible code. If knowledge is power, then we are super heroes'
             ],
             [
-                'name' => 'Ben Johnston',
+                'forename' => 'Ben',
+                'surname' => 'Johnston',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/BenJohnston_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/BenJohnston_Colour.jpg',
@@ -107,7 +114,8 @@ class MeetTheTeamController extends Controller
                 AI Global Media and Twinings Tea.',
             ],
             [
-                'name' => 'Ben Siou',
+                'forename' => 'Ben',
+                'surname' => 'Siou',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/BenS_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/BenS_Colour.jpg',
@@ -119,7 +127,8 @@ class MeetTheTeamController extends Controller
                 best possible results in order to meet the needs of both new and existing clients.',
             ],
             [
-                'name' => 'Corey Lillicrop',
+                'forename' => 'Corey',
+                'surname' => 'Lillicrop',
                 'role' => 'Counts Specialist and technical Support',
                 'image_url' => '/img/website/meet-the-team/Corey_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Corey_Colour.jpg',
@@ -130,7 +139,8 @@ class MeetTheTeamController extends Controller
                   the specified criteria to make sure your data needs are met.',
             ],
             [
-                'name' => 'Darrell Talbott',
+                'forename' => 'Darrell',
+                'surname' => 'Talbott',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/Darrell_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Darrell_Colour.jpg',
@@ -144,7 +154,8 @@ class MeetTheTeamController extends Controller
                   business in the past and I have some great ideas how to make your business stand out from the crowd.',
             ],
             [
-                'name' => 'Darren Colligan',
+                'forename' => 'Darren',
+                'surname' => 'Colligan',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/Darren_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Darren_Colour.jpg',
@@ -156,7 +167,8 @@ class MeetTheTeamController extends Controller
                 I can bring a wealth of knowledge when marketing you directly to key companies, ensuring you gain maximum ROI.',
             ],
             [
-                'name' => 'David Cooper ',
+                'forename' => 'David',
+                'surname' => 'Cooper',
                 'role' => 'sales Account Manager',
                 'image_url' => '/img/website/meet-the-team/David_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/David_Colour.jpg',
@@ -167,7 +179,8 @@ class MeetTheTeamController extends Controller
                 generate a great ROI for my clients.',
             ],
             [
-                'name' => 'Gareth Hall',
+                'forename' => 'Gareth',
+                'surname' => 'Hall',
                 'role' => 'Graphic Designer',
                 'image_url' => '/img/website/meet-the-team/Gareth_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Gareth_Colour.jpg',
@@ -179,7 +192,8 @@ class MeetTheTeamController extends Controller
                 in between.',
             ],
             [
-                'name' => 'Jasmine Thompson',
+                'forename' => 'Jasmine',
+                'surname' => 'Thompson',
                 'role' => 'Lead Generation Specialist',
                 'image_url' => '/img/website/meet-the-team/Jasmine_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Jasmine_Colour.jpg',
@@ -191,7 +205,8 @@ class MeetTheTeamController extends Controller
                 the Picnic.',
             ],
             [
-                'name' => 'John Forster',
+                'forename' => 'John',
+                'surname' => 'Forster',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/John_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/John_Colour.jpg',
@@ -202,7 +217,8 @@ class MeetTheTeamController extends Controller
                  exceed their expected ROI. Spare time is family time - simple as!',
             ],
             [
-                'name' => 'Karen Callaghan',
+                'forename' => 'Karen',
+                'surname' => 'Callaghan',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Karen_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Karen_Colour.jpg',
@@ -216,7 +232,8 @@ class MeetTheTeamController extends Controller
                 the Northumberland coast (if we\'re not jetting off somewhere!). ',
             ],
             [
-                'name' => 'Lewis Dimmick',
+                'forename' => 'Lewis',
+                'surname' => 'Dimmick',
                 'role' => 'Chief technical Officer',
                 'image_url' => '/img/website/meet-the-team/Lewis_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Lewis_Colour.jpg',
@@ -228,7 +245,8 @@ class MeetTheTeamController extends Controller
                 ingredients just wouldn\'t do and you\'ll find no fig rolls at ours. ',
             ],
             [
-                'name' => 'Liam Bell',
+                'forename' => 'Liam',
+                'surname' => 'Bell',
                 'role' => 'Graphic Designer',
                 'image_url' => '/img/website/meet-the-team/Liam_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Liam_Colour.jpg',
@@ -239,7 +257,8 @@ class MeetTheTeamController extends Controller
                 enjoy the ever-evolving nature of working within this field.',
             ],
             [
-                'name' => 'Lisa Kinghorn',
+                'forename' => 'Lisa',
+                'surname' => 'Kinghorn',
                 'role' => 'sales Team Manager',
                 'image_url' => '/img/website/meet-the-team/Lisa_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Lisa_Colour.jpg',
@@ -251,7 +270,8 @@ class MeetTheTeamController extends Controller
                  corporate chain, I always ensure the same level of service is provided.',
             ],
             [
-                'name' => 'Mark Crawley',
+                'forename' => 'Mark',
+                'surname' => 'Crawley',
                 'role' => 'Developer',
                 'image_url' => '/img/website/meet-the-team/Mark_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Mark_Colour.jpg',
@@ -262,7 +282,8 @@ class MeetTheTeamController extends Controller
                 a couple of monitors, working on whatever software my colleagues might need to serve you best.',
             ],
             [
-                'name' => 'Martin Stokes',
+                'forename' => 'Martin',
+                'surname' => 'Stokes',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/Martin_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Martin_Colour.jpg',
@@ -272,7 +293,8 @@ class MeetTheTeamController extends Controller
                 to the business, but bring over thirty years of communication experience to our team.',
             ],
             [
-                'name' => 'Michael Lindsay',
+                'forename' => 'Michael',
+                'surname' => 'Lindsay',
                 'role' => 'sales Team Manager',
                 'image_url' => '/img/website/meet-the-team/Michael_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Michael_Colour.jpg',
@@ -284,7 +306,8 @@ class MeetTheTeamController extends Controller
                  assist and provide a solution to complement your existing sales and marketing activity.',
             ],
             [
-                'name' => 'Pete Noble',
+                'forename' => 'Pete',
+                'surname' => 'Noble',
                 'role' => 'director',
                 'image_url' => '/img/website/meet-the-team/Pete_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Pete_Colour.jpg',
@@ -306,7 +329,8 @@ class MeetTheTeamController extends Controller
                  drop me a connection request on LinkedIn.',
             ],
             [
-                'name' => 'Rhian Bell',
+                'forename' => 'Rhian',
+                'surname' => 'Bell',
                 'role' => 'Marketing & Campaigns Dispatch',
                 'image_url' => '/img/website/meet-the-team/Rhian_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Rhian_Colour.jpg',
@@ -314,12 +338,14 @@ class MeetTheTeamController extends Controller
                 'department' => 'Marketing',
                 'description' => 'I\'ve worked within the marketing industry for around 5 years and in that time I\'ve 
                 advised on over 300,000 email campaigns. It\'s my role to work with our clients on their email strategies 
-                and develop the best course of action for their company. I’ve worked with household names such as Alpro, 
+                and develop the best course of action for their company. I’ve worked with household forenames such as Alpro, 
+                and develop the best course of action for their company. I’ve worked with household surnames such as Alpro, 
                 Twinings and Caterpillar on their digital marketing projects. From subject lines to send times, I enjoy 
                 finding the most effective methods to ensure our customers increase their ROI with each send.',
             ],
             [
-                'name' => 'Robbie Heath',
+                'forename' => 'Robbie',
+                'surname' => 'Heath',
                 'role' => 'Account Manager',
                 'image_url' => '/img/website/meet-the-team/Robbie_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Robbie_Colour.jpg',
@@ -331,7 +357,8 @@ class MeetTheTeamController extends Controller
                 the extra mile to ensure you\'re happy with the product.',
             ],
             [
-                'name' => 'Samantha Furniss',
+                'forename' => 'Samantha',
+                'surname' => 'Furniss',
                 'role' => 'Office Manager and PA to the director',
                 'image_url' => '/img/website/meet-the-team/Sam_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Sam_Colour.jpg',
@@ -343,7 +370,8 @@ class MeetTheTeamController extends Controller
                 pleasure! ',
             ],
             [
-                'name' => 'Scott Noble',
+                'forename' => 'Scott',
+                'surname' => 'Noble',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Scott_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Scott_Colour.jpg',
@@ -356,7 +384,8 @@ class MeetTheTeamController extends Controller
                  (someone has to be eh?).',
             ],
             [
-                'name' => 'Stevie Wilkinson',
+                'forename' => 'Stevie',
+                'surname' => 'Wilkinson',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Stevie_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Stevie_Colour.jpg',
@@ -368,7 +397,8 @@ class MeetTheTeamController extends Controller
                 campaigns a success.',
             ],
             [
-                'name' => 'Tom Armstrong',
+                'forename' => 'Tom',
+                'surname' => 'Armstrong',
                 'role' => 'Senior Account Manager',
                 'image_url' => '/img/website/meet-the-team/Tom_Orange.jpg',
                 'rollover_url' => '/img/website/meet-the-team/Tom_Colour.jpg',
@@ -379,6 +409,8 @@ class MeetTheTeamController extends Controller
                 results for my clients through both data and email marketing. ',
             ],
         ];
+
+        $team_members = collect($team_members)->sortBy('surname');
 
         return view('frontend.meet-the-team', ['team_members' => $team_members]);
     }

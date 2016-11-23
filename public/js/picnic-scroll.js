@@ -33,6 +33,7 @@ module.exports = {
 
         $('.about-img-icon').animate({ 'opacity': '1' }, 1000);
 
+        $('#picnic-basket-hidden').removeClass('hidden');
         $('#section-two-icon-hidden').removeClass('hidden');
         $('#section-three-icon-hidden').removeClass('hidden');
         $('#section-four-icon-hidden').removeClass('hidden');

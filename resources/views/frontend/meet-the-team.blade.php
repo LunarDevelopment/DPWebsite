@@ -33,17 +33,17 @@
                 <div class="meet-the-team-individual col-md-15 col-sm-3 col-xs-6 text-center"
                      v-show="{{ strtolower($team_member['department']) }}">
                     <a type="button" data-toggle="modal"
-                       data-target="#{{ strtolower(str_replace(' ', '', $team_member['name'])) }}">
+                       data-target="#{{ strtolower(str_replace(' ', '', $team_member['forename'] . ' ' . $team_member['surname'])) }}">
                         <img style="max-width:100%;" src="{{ $team_member['image_url'] }}" class="img-rounded"
-                             alt="{{ $team_member['name'] }}"
+                             alt="{{ $team_member['forename'] . ' ' . $team_member['surname'] }}"
                              onmouseover="this.src='{{ $team_member['rollover_url'] }}'"
                              onmouseout="this.src='{{ $team_member['image_url'] }}'">
                     </a>
-                    <p><strong class="text-success">{{ $team_member['name'] }}</strong></p>
+                    <p><strong class="text-success">{{ $team_member['forename'] . ' ' . $team_member['surname'] }}</strong></p>
                     <p>{{ $team_member['role'] }}</p>
                 </div>
                 <!-- Modal Window-->
-                <div id="{{ strtolower(str_replace(' ', '', $team_member['name'])) }}" class="modal fade" tabindex="-1"
+                <div id="{{ strtolower(str_replace(' ', '', $team_member['forename'] . ' ' . $team_member['surname'])) }}" class="modal fade" tabindex="-1"
                      role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="panel modal-panel panel-warning">
@@ -51,7 +51,7 @@
                                 <img src="/img/website/blackx.png">
                             </button>
                             <img class="img-circle panel-icon" src="{{ $team_member['rollover_url'] }}">
-                            <h1 class="text-success">{{ $team_member['name'] }}</h1>
+                            <h1 class="text-success">{{ $team_member['forename'] . ' ' . $team_member['surname'] }}</h1>
                             <h3>{{ $team_member['role'] }}</h3>
                             <p>{{ $team_member['description'] }}</p>
                             @if($team_member['linkedin_url'] != '')
