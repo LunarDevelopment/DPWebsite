@@ -1,20 +1,277 @@
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "fonts/montserrat";
+@import "variable-overrides";
+@import "../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../../node_modules/font-awesome/scss/font-awesome";
+@import "components/trees";
+@import "components/components";
+@import "header/header";
+@import "footer/footer";
+@import "pages/meet-the-team/meet-the-team";
+@import "pages/homepage/homepage";
+@import "pages/products/products";
+@import "pages/contact-us/contact-us";
+@import "pages/about-us/about-us";
 
-// Variables
-@import "variables";
+/**
+ * Paragraph Overrides
+ */
+p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  line-height: 34px;
+  margin-bottom: 48px;
+}
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+ul, ol {
+  @extend p;
+  margin-bottom: 10px;
+}
 
-// Font Awesome
-@import "node_modules/font-awesome/scss/font-awesome";
+/**
+ * Container Overrides
+ */
+@media (min-width: 1200px) {
+  .container, .container-full-height {
+    width: 870px;
+  }
+}
 
-// Helpers
-@import "../helpers";
+/**
+ * Header Overrides
+ */
+h1, h2, h3, h4, h5, h6 {
+  color: $brown;
+  font-weight: 700;
+}
 
-// Global
-@import "global";
+h1 {
+  font-size: 42px;
+  margin-bottom: 75px;
+}
 
-// Pages
-@import "pages/dashboard";
+h2 {
+  font-size: 26px;
+  margin-bottom: 75px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/**
+ * Button Overrides
+ */
+a {
+  color: $orange;
+}
+
+a:hover, a:focus, a:active {
+  color: darken($orange, 20%);
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  padding: 6px 26px;
+  border-radius: 20px;
+}
+
+.btn-darkgreen {
+  @extend .btn-success;
+  background-color: darken($green, 10%);
+  &:hover {
+    background-color: darken($green, 20%);
+  }
+}
+
+.btn-yellow {
+  @extend .btn-success;
+  background-color: $yellow;
+  &:hover {
+    background-color: darken($yellow, 20%);
+  }
+}
+
+.btn-turquoise {
+  @extend .btn-success;
+  background-color: $turquoise;
+  &:hover {
+    background-color: darken($turquoise, 20%);
+  }
+}
+
+.btn-call-to-action {
+  border: 2px solid #FFFFFF !important;
+  font-size: 18px;
+  background-color: #EF5A2D;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: darken(#EF5A2D, 20%);
+  }
+}
+
+/**
+ * Text Overrides
+ */
+.text-primary {
+  color: $blue !important;
+}
+
+.text-success {
+  color: $green !important;
+}
+
+.text-warning {
+  color: $orange !important;
+}
+
+.text-danger {
+  color: $pink !important;
+}
+
+.text-turquoise {
+  color: $turquoise !important;
+}
+
+.text-yellow {
+  color: $yellow !important;
+}
+
+.text-white {
+  color: #FFFFFF !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.small-print {
+  font-size: 14px;
+  color: #898585;
+}
+
+/**
+ * Form Overrides
+ */
+form {
+  margin: 70px 0;
+}
+
+.form-control {
+  height: auto;
+  padding: 8px 22px;
+  font-size: 20px;
+  color: #000 !important;
+  background-color: #E6E6E6;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/**
+ * Background Styles
+ */
+.bg-primary {
+  background-color: $blue;
+}
+
+.bg-success {
+  background-color: $green;
+}
+
+.bg-warning {
+  background-color: $orange;
+}
+
+.bg-danger {
+  background-color: $pink;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-turquoise {
+  background-color: $turquoise;
+}
+
+.bg-grass {
+  background-color: #528731;
+}
+
+/**
+ * Frontend Styles Start Here
+ */
+#app-layout {
+  //margin-top: 210px !important;
+}
+@media (min-width: 1200px) {
+  .full-height {
+    min-height: 100vh;
+  }
+}
+
+.logged-in-as {
+  margin: 0;
+  border-radius: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/**
+ * Column sizes for a 1.5 column.
+ */
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.social-icon {
+  margin-right: 20px;
+  width: 30px;
+}
+
+#get-started {
+  margin-bottom: 220px;
+}
+
+@import "mobile";
+@import "tablet";

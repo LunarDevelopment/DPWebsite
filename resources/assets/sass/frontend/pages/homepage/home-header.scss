@@ -1,0 +1,34 @@
+.home-header {
+    height: 80vh;
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    line-height: 34px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 81px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-header {
+    height: 100vh;
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 26px;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 26px;
+      margin-top: 40px;
+    }
+  }
+}

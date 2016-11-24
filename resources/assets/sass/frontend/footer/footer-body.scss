@@ -1,0 +1,45 @@
+.footer-body {
+  background-color: #72AC42;
+  color: #FFFFFF;
+  padding: 70px 0 30px;
+  p {
+    color: #FFFFFF;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  ul {
+    line-height: 28px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: capitalize;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  }
+  .footer-social {
+    .social-icon {
+      margin: 15px 15px 15px 0;
+      width: 30px;
+    }
+    p {
+      margin-bottom: 37px;
+    }
+  }
+  a {
+    color: #ffffff;
+  }
+  a:hover {
+    color: #FFFFFF;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+  .footer-social {
+    .social-icon {
+      margin: 15px 5px 0 0 !important;
+    }
+  }
+}

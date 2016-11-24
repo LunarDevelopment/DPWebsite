@@ -115,6 +115,10 @@ elixir((mix) => {
         "public/css/rtl.css"
     ])
 
+    .browserify("frontend/meet-the-team.js", "public/js/meet-the-team.js")
+
+    .browserify('resources/assets/js/frontend/picnicscroll.js', 'public/js/picnic-scroll.js')
+
     /**
      * Run tests
      */

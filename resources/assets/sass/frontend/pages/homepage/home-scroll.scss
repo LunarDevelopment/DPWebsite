@@ -1,0 +1,44 @@
+.home-scroller {
+  height: 200px;
+  width: 60px;
+  position: fixed;
+  right: 250px;
+  margin-left: 30px;
+  margin-top: -100px;
+  top: 50%;
+  z-index: 3001;
+  a {
+    display: block;
+  }
+  #up-nav {
+    width: 40px;
+    height: 40px;
+    background: url(../../img/website/NavBar.png) 40px 0px
+  }
+  #blue-dot {
+    width: 12px;
+    height: 12px;
+    background: url(../../img/website/NavBar.png) 26px 124px;
+  }
+  #turquoise-dot {
+    width: 12px;
+    height: 12px;
+    background: url(../../img/website/NavBar.png) 26px 104px;
+  }
+  #yellow-dot {
+    width: 12px;
+    height: 12px;
+    background: url(../../img/website/NavBar.png) 26px 84px;
+  }
+  #pink-dot {
+    width: 12px;
+    height: 12px;
+    background: url(../../img/website/NavBar.png) 26px 64px;
+  }
+  #down-nav {
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/website/NavBar.png) 40px 40px
+  }
+}
