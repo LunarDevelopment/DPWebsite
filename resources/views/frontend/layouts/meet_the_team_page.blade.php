@@ -28,7 +28,15 @@
 @include('includes.partials.logged-in-as')
 @include('frontend.includes.nav')
 
-@yield('content')
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @include('includes.partials.messages')
+            @yield('content')
+        </div>
+    </div>
+</div>
 
 @include('frontend.includes.footer-cities')
 @include('frontend.includes.footer-body')
@@ -49,7 +57,6 @@
 
     ga('create', 'UA-87467802-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 <script>
     $(document).ready(function () {
