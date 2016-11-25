@@ -8,15 +8,7 @@ use App\Http\Controllers\Controller;
 
 class ContactController extends Controller
 {
-    public function __construct()
-    {
-        \Debugbar::disable();
-    }
 
-    public function index()
-    {
-        return view('frontend.contact-us');
-    }
 
     public function submit(Request $request)
     {
@@ -36,4 +28,6 @@ class ContactController extends Controller
 
         return redirect()->back()->withFlashSuccess('<strong>Thanks</strong> for contacting us! We\'ll get back to you shortly.');
     }
+
+
 }

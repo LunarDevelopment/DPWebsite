@@ -12,19 +12,19 @@
                 <div class="row">
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Marketing Lists</h3>
-                        <a href="{{ route('frontend.marketing-lists') }}"><img class="about-img-icon" src="/img/website/data.svg"></a>
+                        <a href="/marketing-lists"><img class="about-img-icon" src="/img/website/data.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Managed Email Campaigns</h3>
-                        <a href="{{ route('frontend.managed-email-campaigns') }}"><img class="about-img-icon" src="/img/website/campaigns.svg"></a>
+                        <a href="/managed-email-campaigns"><img class="about-img-icon" src="/img/website/campaigns.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">Design</h3>
-                        <a href="{{ route('frontend.design') }}"><img class="about-img-icon" src="/img/website/designs.svg"></a>
+                        <a href="/design"><img class="about-img-icon" src="/img/website/designs.svg"></a>
                     </div>
                     <div class="col-sm-3 col-xs-6 text-center">
                         <h3 class="text-white about-us-img-text">(CPE) Email Marketing</h3>
-                        <a href="{{ route('frontend.cpe-campaigns') }}"><img class="about-img-icon" src="/img/website/cpe.svg"></a>
+                        <a href="/cpe-campaigns"><img class="about-img-icon" src="/img/website/cpe.svg"></a>
                     </div>
                 </div>
                 <div class="row">
@@ -32,7 +32,7 @@
                         <p class="text-white">Now that you’ve seen our Picnic of digital marketing services, it's time
                             to create a basket that's full to the brim with strategies that will get you results.
                         </p>
-                        <a id="get-started" class="btn btn-call-to-action" href="{{ route('frontend.contact-us') }}">Get Started</a>
+                        <a id="get-started" class="btn btn-call-to-action" href="contact-us">Get Started</a>
                     </div>
                 </div>
             </div>

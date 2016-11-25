@@ -1,7 +1,9 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: ben.jackson
- * Date: 25/11/2016
- * Time: 10:59
+ * All route names are prefixed with 'admin.'
  */
+Route::get('pages', 'PagesController@index');
+Route::get('pages/edit/{id}', 'PagesController@edit');
+Route::post('pages/save', 'PagesController@save');
+Route::post('pages/delete', 'PagesController@delete');

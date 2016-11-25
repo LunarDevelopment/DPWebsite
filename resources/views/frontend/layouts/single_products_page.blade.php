@@ -25,18 +25,12 @@
     @yield('after-styles-end')
 </head>
 <body id="app-layout">
+@include('frontend.includes.cookie')
 @include('includes.partials.logged-in-as')
 @include('frontend.includes.nav')
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
             @include('includes.partials.messages')
             @yield('content')
-        </div>
-    </div>
-</div>
 
 @include('frontend.includes.footer-cities')
 @include('frontend.includes.footer-body')
@@ -57,7 +51,6 @@
 
     ga('create', 'UA-87467802-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 <script>
     $(document).ready(function () {
@@ -81,7 +74,33 @@
         }
     });
 </script>
-
+<script>
+    if (! getCookie("read_cookies")) {
+        console.log(getCookie("read_cookies"));
+        setCookie("read_cookies", "", 7);
+        $('#cookies-alert').removeClass('hidden');
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length,c.length);
+            }
+        }
+        return "";
+    }
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+</script>
 @include('includes.partials.ga')
 </body>
 </html>

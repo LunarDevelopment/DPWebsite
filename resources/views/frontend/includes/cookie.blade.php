@@ -1,4 +1,4 @@
-<div class="alert alert-dismissible alert-cookies" role="alert">
+<div id="cookies-alert" class="alert alert-dismissible alert-cookies hidden" role="alert">
     <div class="col-md-8 col-md-offset-2">
         <img class="cookie" src="/img/website/cookie.svg">
         <p><strong>There's cookies in our Picnic basket!</strong> If you continue to use our website,

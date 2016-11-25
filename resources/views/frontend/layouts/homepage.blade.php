@@ -1,6 +1,6 @@
 @include('frontend.includes.header')
 <body id="app-layout" class="home" style="background: linear-gradient(#7CB8E3, #D8E7F5);">
-
+@include('frontend.includes.cookie')
 @include('includes.partials.logged-in-as')
 <div id="section-one"></div>
 @include('frontend.includes.nav')

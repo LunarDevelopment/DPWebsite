@@ -27,31 +27,31 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-inner">
                     <ul class="nav navbar-nav">
-                        <li class="parent-link-style">{{ link_to_route('frontend.index', trans('navs.frontend.index')) }}</li>
+                        <li class="parent-link-style"><a href="/">{{  trans('navs.frontend.index') }}</a></li>
                         <li class="dropdown parent-link-style">
-                            <a href="{{ route('frontend.about-us') }}"><span
-                                        class="caret"></span> {{ trans('navs.frontend.about-us') }}</a>
+                            <a href="/about-us"><span
+                                        class="caret"></span>{{ trans('navs.frontend.about-us') }}</a>
                             <ul class="dropdown-menu">
-                                <li>{{ link_to_route('frontend.about-us', trans('navs.frontend.about-us')) }}</li>
-                                <li>{{ link_to_route('frontend.meet-the-team', trans('navs.frontend.meet-the-team')) }}</li>
+                                <li><a href="/about-us">{{ trans('navs.frontend.about-us') }}</a></li>
+                                <li><a href="/meet-the-team">{{ trans('navs.frontend.meet-the-team') }}</a></li>
                             </ul>
                         </li>
                         <li class="dropdown parent-link-style">
-                            <a href="{{ route('frontend.products') }}"><span
+                            <a href="/"><span
                                         class="caret"></span> {{ trans('navs.frontend.products') }}</a>
                             <ul class="dropdown-menu">
-                                <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
-                                <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
-                                <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
-                                <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
+                                <li><a href="/marketing-lists">{{ trans('navs.frontend.marketing-lists') }}</a></li>
+                                <li><a href="/managed-email-campaigns">{{ trans('navs.frontend.managed-email-campaigns') }}</a></li>
+                                <li><a href="/design">{{ trans('navs.frontend.design') }}</a></li>
+                                <li><a href="/cpe-campaigns">{{ trans('navs.frontend.cpe-campaigns') }}</a></li>
                             </ul>
                         </li>
                         <li class="dropdown parent-link-style">
-                            <a href="{{ route('frontend.contact-us') }}"><span
+                            <a href="/contact-us"><span
                                         class="caret"></span> {{ trans('navs.frontend.contact-us') }}</a>
                             <ul class="dropdown-menu">
-                                <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
-                                <li>{{ link_to_route('frontend.subscribe', trans('navs.frontend.subscribe')) }}</li>
+                                <li><a href="/contact-us">{{  trans('navs.frontend.contact-us') }}</a></li>
+                                <li><a href="/subscribe">{{  trans('navs.frontend.subscribe') }}</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,16 +82,16 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="navbar-inner">
                         <ul class="nav navbar-nav">
-                            <li>{{ link_to_route('frontend.index', trans('navs.frontend.index')) }}</li>
-                            <li>{{ link_to_route('frontend.about-us', trans('navs.frontend.about-us')) }}</li>
-                            <li>{{ link_to_route('frontend.meet-the-team', trans('navs.frontend.meet-the-team')) }}</li>
-                            <li>{{ link_to_route('frontend.products', trans('navs.frontend.products')) }}</li>
-                            <li>{{ link_to_route('frontend.marketing-lists', trans('navs.frontend.marketing-lists')) }}</li>
-                            <li>{{ link_to_route('frontend.managed-email-campaigns', trans('navs.frontend.managed-email-campaigns')) }}</li>
-                            <li>{{ link_to_route('frontend.design', trans('navs.frontend.design')) }}</li>
-                            <li>{{ link_to_route('frontend.cpe-campaigns', trans('navs.frontend.cpe-campaigns')) }}</li>
-                            <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
-                            <li>{{ link_to_route('frontend.subscribe', trans('navs.frontend.subscribe')) }}</li>
+                            <li><a href="/">{{ trans('navs.frontend.index') }}</a></li>
+                            <li><a href="/about-us">{{  trans('navs.frontend.about-us') }}</a></li>
+                            <li><a href="/meet-the-team">{{  trans('navs.frontend.meet-the-team') }}</a></li>
+                            <li><a href="/products">{{  trans('navs.frontend.products') }}</a></li>
+                            <li><a href="/marketing-lists">{{  trans('navs.frontend.marketing-lists') }}</a></li>
+                            <li><a href="/managed-email-campaigns">{{  trans('navs.frontend.managed-email-campaigns') }}</a></li>
+                            <li><a href="/design">{{  trans('navs.frontend.design') }}</a></li>
+                            <li><a href="/cpe-campaigns">{{ trans('navs.frontend.cpe-campaigns') }}</a></li>
+                            <li><a href="/contact-us">{{ trans('navs.frontend.contact-us') }}</a></li>
+                            <li><a href="/subscribe">{{ trans('navs.frontend.subscribe') }}</a></li>
                         </ul>
                     </div>
                 </div>

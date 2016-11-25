@@ -8,16 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class SubscribeController extends Controller
 {
-    public function __construct()
-    {
-        \Debugbar::disable();
-    }
-
-    public function index()
-    {
-        return view('frontend.subscribe');
-    }
-
     public function submit(Request $request){
         $this->validate($request, [
             'name' => 'required|String|max:255',

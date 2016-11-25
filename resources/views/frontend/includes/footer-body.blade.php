@@ -20,12 +20,11 @@
             </div>
             <div class="col-sm-3" style="border:none;text-transform:capitalize;">
                 <ul>
-                    <li>{{ link_to_route('frontend.index', trans('navs.frontend.index')) }}</li>
-                    <li>{{ link_to_route('frontend.about-us', trans('navs.frontend.about-us')) }}</li>
-                    <li>{{ link_to_route('frontend.contact-us', trans('navs.frontend.contact-us')) }}</li>
-                    <li>{{ link_to_route('frontend.faq', trans('navs.frontend.faq')) }}</li>
-                    <li>{{ link_to_route('frontend.privacy-policy', trans('navs.frontend.privacy-policy')) }}</li>
-                    {{--<li>{{ link_to_route('frontend.site-map', trans('navs.frontend.site-map')) }}</li>--}}
+                    <li><a href="/">{{ trans('navs.frontend.index') }}</li>
+                    <li><a href="about-us">{{ trans('navs.frontend.about-us') }}</li>
+                    <li><a href="contact-us">{{ trans('navs.frontend.contact-us') }}</li>
+                    <li><a href="faq">{{ trans('navs.frontend.faq') }}</li>
+                    <li><a href="privacy-policy">{{ trans('navs.frontend.privacy-policy') }}</li>
                 </ul>
             </div>
         </div>
@@ -38,9 +37,9 @@
             <div class="col-xs-12 text-center">
                 <p>
                     <strong>Social:</strong><br>
-                    <a href="#"><img class="social-icon" src="/img/website/twitter.svg" style="margin-left:5px;margin-right:5px;"></a>
-                    <a href="#"><img class="social-icon" src="/img/website/linkedin.svg" style="margin-left:5px;margin-right:5px;"></a>
-                    <a href="#"><img class="social-icon" src="/img/website/instagram.svg" style="margin-left:5px;margin-right:5px;"></a>
+                    <a href="{{ $socials['twitter'] }}"><img class="social-icon" src="/img/website/twitter.svg"></a>
+                    <a href="{{ $socials['linkedin'] }}"><img class="social-icon" src="/img/website/linkedin.svg"></a>
+                    <a href="{{ $socials['instagram'] }}"><img class="social-icon" src="/img/website/instagram.svg"></a>
                 </p>
                 <p>
                     <strong>Subscribe:</strong><br>

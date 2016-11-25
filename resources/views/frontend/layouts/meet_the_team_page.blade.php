@@ -25,6 +25,7 @@
     @yield('after-styles-end')
 </head>
 <body id="app-layout">
+@include('frontend.includes.cookie')
 @include('includes.partials.logged-in-as')
 @include('frontend.includes.nav')
 
@@ -80,7 +81,7 @@
         }
     });
 </script>
-
+<script src="/js/meet-the-team.js"></script>
 @include('includes.partials.ga')
 </body>
 </html>

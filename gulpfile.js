@@ -24,8 +24,8 @@ elixir((mix) => {
         'public/build/fonts/font-awesome'
     )
     .copy(
-        'node_modules/bootstrap-sass/assets/fonts/bootstrap',
-        'public/build/fonts/bootstrap'
+        'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+        'public/js/vendor/bootstrap'
     )
 
     /**

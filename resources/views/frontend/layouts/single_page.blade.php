@@ -25,6 +25,7 @@
     @yield('after-styles-end')
 </head>
 <body id="app-layout">
+@include('frontend.includes.cookie')
 @include('includes.partials.logged-in-as')
 @include('frontend.includes.nav')
 
@@ -57,7 +58,6 @@
 
     ga('create', 'UA-87467802-1', 'auto');
     ga('send', 'pageview');
-
 </script>
 <script>
     $(document).ready(function () {

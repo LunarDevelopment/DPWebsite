@@ -3,22 +3,25 @@
 namespace App\Http\Controllers\Frontend\Website;
 
 use App\Http\Controllers\Controller;
+use App\Repositories\Frontend\Website\SocialRepository;
+use App\Posts;
 
 class PagesController extends Controller
 {
-    public function index()
+    public function show($name, Posts $posts, SocialRepository $socialRepository)
     {
-        return view('frontend.index');
+        $content = $posts->where('guid', $name)->first();
+        $socials = $socialRepository->getAll();
+        return view('frontend.content', [
+            'content' => $content,
+            'socials' => $socials
+        ]);
     }
 
-    public function about()
+    public function index(SocialRepository $socialRepository)
     {
-        return view('frontend.about-us');
-    }
-
-    public function products()
-    {
-        return view('frontend.products');
+        $socials = $socialRepository->getAll();
+        return view('frontend.index', ['socials' => $socials]);
     }
 
     public function marketingLists()
@@ -39,15 +42,5 @@ class PagesController extends Controller
     public function cpeCampaigns()
     {
         return view('frontend.cpe-campaigns');
-    }
-
-    public function privacyPolicy()
-    {
-        return view('frontend.privacy-policy');
-    }
-
-    public function frequentlyAskedQuestions()
-    {
-        return view('frontend.faq');
     }
 }

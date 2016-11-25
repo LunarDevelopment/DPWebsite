@@ -16,7 +16,7 @@
             </div><!-- /.box tools -->
         </div><!-- /.box-header -->
         <div class="box-body">
-            {!! getLanguageBlock('backend.lang.welcome') !!}
+            This is the Digital Picnic website dashboard, the application is in beta and please report any bugs to ben.jackson@digital-picnic.email.
         </div><!-- /.box-body -->
     </div><!--box box-success-->
 
