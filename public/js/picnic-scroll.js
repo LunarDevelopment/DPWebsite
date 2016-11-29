@@ -11,26 +11,34 @@ module.exports = {
     iconOneAnimate: function iconOneAnimate(basketPos, iconPos) {
         $('#section-two-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px', 'z-index': '2990' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'margin-left': '-152' }, 1000);
     },
+
     iconTwoAnimate: function iconTwoAnimate(basketPos, iconPos) {
         $('#section-three-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left - 180 + 'px', 'z-index': '2991' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'height': '110px', 'margin-left': '-120px' }, 1000);
     },
+
     iconThreeAnimate: function iconThreeAnimate(basketPos, iconPos) {
         $('#section-four-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left + 180 + 'px', 'z-index': '2992' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'margin-left': '-10px' }, 1000);
     },
+
     iconFourAnimate: function iconFourAnimate(basketPos, iconPos) {
         $('#section-five-icon').css({ 'position': 'fixed', 'top': '30%', 'left': iconPos.left - 180 + 'px', 'z-index': '2990' }).animate({ 'left': '50%', 'top': basketPos + 'px', 'width': '110px', 'margin-left': '42px' }, 1000);
     },
 
     finalePosition: function finalePosition(finaleBasketPosition) {
-        $('#picnic-basket').css({ 'position': 'absolute', 'top': finaleBasketPosition - 220 + 70 + 'px', 'left': '50%' + 'px', 'margin-left': '-160px' });
-
+        $('#picnic-basket').css({
+            'position': 'absolute',
+            'top': finaleBasketPosition - 220 + 70 + 'px',
+            'left': '50%' + 'px',
+            'margin-left': '-160px',
+            'opacity': 0
+        }).animate({
+            'opacity': 1
+        }, 1000);
         $('#section-two-icon').addClass('hidden');
         $('#section-three-icon').addClass('hidden');
         $('#section-four-icon').addClass('hidden');
         $('#section-five-icon').addClass('hidden');
-
         $('.about-img-icon').animate({ 'opacity': '1' }, 1000);
-
         $('#picnic-basket-hidden').removeClass('hidden');
         $('#section-two-icon-hidden').removeClass('hidden');
         $('#section-three-icon-hidden').removeClass('hidden');
@@ -126,6 +134,15 @@ $(document).ready(function () {
         //Get Header 1 text from top
         basketTrigger = $('#headerOneText').offset();
 
+        $('#picnic-basket').css({
+            'position': 'fixed',
+            'top': basketPos + 'px',
+            'left': '50%',
+            'margin-left': '-160px',
+            'z-index': '3000',
+            'opacity': '0'
+        });
+
         /**
          * Scroll listener
          */
@@ -138,15 +155,9 @@ $(document).ready(function () {
             /*
              * Set Basket position to Fixed.
              */
-            var basketBeforeAnimation = $('#picnic-basket').offset().top - $('window').scrollTop(); //Get fixed position of Basket
-            if (scroll > basketTrigger.top && picnicAnimated) {
-                $('#picnic-basket').css({
-                    'position': 'fixed',
-                    'top': basketBeforeAnimation,
-                    'left': '50%',
-                    'margin-left': '-160px',
-                    'z-index': '3000'
-                }).animate({ 'top': basketPos + 'px' }, 2000);
+            // var basketBeforeAnimation = $('window').scrollTop() - $('#picnic-basket').offset().top; //Get fixed position of Basket
+            if (picnicAnimated) {
+                $('#picnic-basket').animate({ 'opacity': '1' }, 2000);
                 picnicAnimated = false;
             }
 

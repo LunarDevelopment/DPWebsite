@@ -11318,7 +11318,6 @@ button.close {
   bottom: 0;
   width: 100%;
   z-index: 4;
-  margin-bottom: 30px;
 }
 
 .footer-hill {
@@ -11584,6 +11583,7 @@ button.close {
   font-size: 44px;
   font-weight: 900;
   margin-bottom: 35px;
+  margin-top: 55px;
 }
 
 .home-footer p, .home-footer ul, .home-footer ol {
@@ -11606,6 +11606,7 @@ button.close {
 @media (min-width: 1200px) {
   .home .panel {
     height: 700px;
+    background: rgba(245, 245, 245, 0.8);
   }
   .home .panel h1 {
     margin-bottom: 26px;

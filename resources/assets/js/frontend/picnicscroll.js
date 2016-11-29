@@ -46,6 +46,14 @@ $(document).ready(function () {
         //Get Header 1 text from top
         basketTrigger = $('#headerOneText').offset();
 
+        $('#picnic-basket').css({
+            'position': 'fixed',
+            'top': basketPos + 'px',
+            'left': '50%',
+            'margin-left': '-160px',
+            'z-index': '3000',
+            'opacity': '0'
+        });
 
         /**
          * Scroll listener
@@ -59,16 +67,9 @@ $(document).ready(function () {
             /*
              * Set Basket position to Fixed.
              */
-            var basketBeforeAnimation = $('#picnic-basket').offset().top - $('window').scrollTop(); //Get fixed position of Basket
-            if (scroll > basketTrigger.top && picnicAnimated) {
-                $('#picnic-basket').css({
-                    'position': 'fixed',
-                    'top': basketBeforeAnimation,
-                    'left': '50%',
-                    'margin-left': '-160px',
-                    'z-index': '3000',
-                })
-                    .animate({'top': basketPos + 'px'}, 2000);
+            // var basketBeforeAnimation = $('window').scrollTop() - $('#picnic-basket').offset().top; //Get fixed position of Basket
+            if (picnicAnimated) {
+                $('#picnic-basket').animate({'opacity': '1'}, 2000);
                 picnicAnimated = false;
             }
 
