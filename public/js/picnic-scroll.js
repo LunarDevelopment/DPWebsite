@@ -22,8 +22,6 @@ module.exports = {
     },
 
     finalePosition: function finalePosition(finaleBasketPosition) {
-        //finaleBasketPosition minus 220 is height of basket
-        //and 220(height of basket) + 70 is Get Started button
         $('#picnic-basket').css({ 'position': 'absolute', 'top': finaleBasketPosition - 220 + 70 + 'px', 'left': '50%' + 'px', 'margin-left': '-160px' });
 
         $('#section-two-icon').addClass('hidden');
@@ -43,34 +41,70 @@ module.exports = {
 };
 
 },{}],2:[function(require,module,exports){
-'use strict';
+"use strict";
 
 /**
- * The script is only to run on devices greater than or equal to 992px.
- * To do this I check whether a class has changed to its media query value for devices under 992px.
- * If the media query value has changed the code will not run.
+ * BootstrapScroll
+ * @constructor
  */
 
-var AnimateToPosition = require('./PicnicScroll/AnimateToPosition');
+module.exports = {
 
-var runCode = false;
+    smoothScroll: function smoothScroll() {
+
+        /*
+         * Bootstraps ScrollSpy method, see http://getbootstrap.com/javascript/.
+         */
+        $('body').scrollspy({ target: '#main-nav' });
+
+        /*
+         * Applies a smooth transition whenever a link with a leading '#' symbol is clicked to an element with
+         * the corresponding ID.
+         */
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    }
+
+};
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+var AnimateToPosition = require('./PicnicScroll/AnimateToPosition');
+var BootstrapScroll = require('./PicnicScroll/BootstrapScroll');
 
 $(document).ready(function () {
+
     if ($(window).width() >= 1200) {
-        /**
+
+        /*
+         * Call BootstrapScroll.smoothScroll method.
+         */
+        BootstrapScroll.smoothScroll();
+
+        /*
          * Set variables to be used in logic below.
          */
         var windowHeight;
         var halfWindowHeight;
         var quarterWindowHeight;
-        var windowWidth;
-        var siteNavHeight;
         var itemBasketOne = true;
         var itemBasketTwo = true;
         var itemBasketThree = true;
         var itemBasketFour = true;
         var finalePosition = true;
-        var scrollFlag = 0;
         var basketItemHeight = 220;
         var basketPos;
         var basketTrigger;
@@ -87,10 +121,7 @@ $(document).ready(function () {
         windowHeight = $(window).height();
         halfWindowHeight = windowHeight / 2;
         quarterWindowHeight = windowHeight / 4;
-        windowWidth = $(window).width();
         basketPos = halfWindowHeight + quarterWindowHeight - basketItemHeight / 4;
-        siteNavHeight = $('#main-nav').height();
-        // $('#picnic-basket').css({'left': '50%', 'margin-left': '-160px', 'top': basketPos + 'px'});
         $('.about-img-icon').css({ 'opacity': '0' });
         //Get Header 1 text from top
         basketTrigger = $('#headerOneText').offset();
@@ -99,63 +130,56 @@ $(document).ready(function () {
          * Scroll listener
          */
         $(window).scroll(function () {
-            if (scrollFlag === 0) {
-                /*
-                 * Get Scroll Position INT.
-                 */
-                var scroll = $(window).scrollTop();
+            /*
+             * Get Scroll Position INT.
+             */
+            var scroll = $(window).scrollTop();
 
-                /**
-                 * Set animation point for finale transition.
-                 * @type {jQuery}
-                 */
-                var finalTrigger = $('#final-trigger').offset();
+            /*
+             * Set Basket position to Fixed.
+             */
+            var basketBeforeAnimation = $('#picnic-basket').offset().top - $('window').scrollTop(); //Get fixed position of Basket
+            if (scroll > basketTrigger.top && picnicAnimated) {
+                $('#picnic-basket').css({
+                    'position': 'fixed',
+                    'top': basketBeforeAnimation,
+                    'left': '50%',
+                    'margin-left': '-160px',
+                    'z-index': '3000'
+                }).animate({ 'top': basketPos + 'px' }, 2000);
+                picnicAnimated = false;
+            }
 
-                //Work out fixed position
-                var basketBeforeAnimation = $('#picnic-basket').offset().top - $('window').scrollTop();
-
-                //Get started buttons position from Top
-                finaleBasketPosition = $('#get-started').offset();
-
-                /*
-                 * Scroll down Animations triggers
-                 */
-                if (scroll > basketTrigger.top && picnicAnimated) {
-                    $('#picnic-basket').css({
-                        'position': 'fixed',
-                        'top': basketBeforeAnimation,
-                        'left': '50%',
-                        'margin-left': '-160px',
-                        'z-index': '3000'
-                    }).animate({ 'top': basketPos + 'px' }, 2000);
-                    picnicAnimated = false;
-                }
-
-                if (scroll > animationOne.top && itemBasketOne) {
-                    var iconPosition = $('#section-two-icon').offset();
-                    AnimateToPosition.iconOneAnimate(basketPos, iconPosition);
-                    itemBasketOne = false;
-                } else if (scroll > animationTwo.top && itemBasketTwo) {
-                    var iconPosition = $('#section-three-icon').offset();
-                    AnimateToPosition.iconTwoAnimate(basketPos, iconPosition);
-                    itemBasketTwo = false;
-                } else if (scroll > animationThree.top && itemBasketThree) {
-                    var iconPosition = $('#section-four-icon').offset();
-                    AnimateToPosition.iconThreeAnimate(basketPos, iconPosition);
-                    itemBasketThree = false;
-                } else if (scroll > animationFour.top && itemBasketFour) {
-                    var iconPosition = $('#section-five-icon').offset();
-                    AnimateToPosition.iconFourAnimate(basketPos, iconPosition);
-                    itemBasketFour = false;
-                } else if (scroll > finalTrigger.top - 10 && finalePosition) {
-                    AnimateToPosition.finalePosition(finaleBasketPosition.top);
-                    finalePosition = false;
-                }
+            /*
+             * Each animation will only occur once. Each if/else if/else statement specifies when the animation will
+             * occur.
+             */
+            var finalTrigger = $('#final-trigger').offset(); //Set animation point for finale transition.
+            finaleBasketPosition = $('#get-started').offset(); //Get started buttons position from Top
+            if (scroll >= animationOne.top && itemBasketOne) {
+                var iconPosition = $('#section-two-icon').offset();
+                AnimateToPosition.iconOneAnimate(basketPos, iconPosition);
+                itemBasketOne = false;
+            } else if (scroll >= animationTwo.top && itemBasketTwo) {
+                var iconPosition = $('#section-three-icon').offset();
+                AnimateToPosition.iconTwoAnimate(basketPos, iconPosition);
+                itemBasketTwo = false;
+            } else if (scroll >= animationThree.top && itemBasketThree) {
+                var iconPosition = $('#section-four-icon').offset();
+                AnimateToPosition.iconThreeAnimate(basketPos, iconPosition);
+                itemBasketThree = false;
+            } else if (scroll >= animationFour.top && itemBasketFour) {
+                var iconPosition = $('#section-five-icon').offset();
+                AnimateToPosition.iconFourAnimate(basketPos, iconPosition);
+                itemBasketFour = false;
+            } else if (scroll >= finalTrigger.top && finalePosition) {
+                AnimateToPosition.finalePosition(finaleBasketPosition.top);
+                finalePosition = false;
             }
         });
     }
 });
 
-},{"./PicnicScroll/AnimateToPosition":1}]},{},[2]);
+},{"./PicnicScroll/AnimateToPosition":1,"./PicnicScroll/BootstrapScroll":2}]},{},[3]);
 
 //# sourceMappingURL=picnic-scroll.js.map

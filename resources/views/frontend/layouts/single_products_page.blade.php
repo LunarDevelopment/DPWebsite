@@ -52,55 +52,7 @@
     ga('create', 'UA-87467802-1', 'auto');
     ga('send', 'pageview');
 </script>
-<script>
-    $(document).ready(function () {
-        if ($(window).width() > 992) {
-            $(window).on('scroll', function () {
-                var scrollPosY = window.pageYOffset;
-                var scrollTrigger = 74;
-                if (scrollPosY < 0) {
-                    $('#logo').addClass('header-logo-fixed');
-                    $('').addClass('');
-                } else if (scrollPosY > scrollTrigger) {
-                    $('#nav').addClass('navbar-fixed-top');
-                    $('#logo').addClass('header-logo-fixed');
-                    $('#subscribe').addClass('subscribe-bar-margin');
-                } else {
-                    $('#nav').removeClass('navbar-fixed-top');
-                    $('#logo').removeClass('header-logo-fixed');
-                    $('#subscribe').removeClass('subscribe-bar-margin');
-                }
-            });
-        }
-    });
-</script>
-<script>
-    if (! getCookie("read_cookies")) {
-        console.log(getCookie("read_cookies"));
-        setCookie("read_cookies", "", 7);
-        $('#cookies-alert').removeClass('hidden');
-    }
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length,c.length);
-            }
-        }
-        return "";
-    }
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays*24*60*60*1000));
-        var expires = "expires="+ d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-</script>
+@include('frontend.includes.navigation-script')
 @include('includes.partials.ga')
 </body>
 </html>

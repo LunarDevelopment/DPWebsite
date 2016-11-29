@@ -8119,7 +8119,7 @@ return Vue$3;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],2:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var _vue = require('vue/dist/vue.js');
 

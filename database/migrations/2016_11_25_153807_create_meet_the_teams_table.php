@@ -13,8 +13,16 @@ class CreateMeetTheTeamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('meet_the_teams', function (Blueprint $table) {
+        Schema::create('meet_the_team', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('forename', 20);
+            $table->string('surname', 20);
+            $table->string('role', 100);
+            $table->string('image_url', 255);
+            $table->string('rollover_url', 255);
+            $table->string('linkedin_url', 255);
+            $table->string('department', 25);
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -26,6 +34,6 @@ class CreateMeetTheTeamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('meet_the_teams');
+        Schema::dropIfExists('meet_the_team');
     }
 }

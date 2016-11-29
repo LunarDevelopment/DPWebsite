@@ -1,9 +1,5 @@
 <div class="container-fluid hidden-sm hidden-xs" id="subscribe">
     <div class="row">
-        <!-- Company Logo -->
-        <div id="logo" class="header-logo">
-            <a href="/"><img src="/img/website/logowithbox.png" alt="Digital Picnic Logo"></a>
-        </div>
         <!-- Subscribe Bar -->
         <div class="container-fluid header-subscribe">
             <div class="row">
@@ -22,7 +18,10 @@
     <div class="row">
         <!-- Main navigation -->
         <nav class="navbar center navbar-default">
-
+            <!-- Company Logo -->
+            <div id="logo" class="header-logo">
+                <a href="/"><img id="logo-img" src="/img/website/logowithbox.png" alt="Digital Picnic Logo"></a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <div class="navbar-inner">

@@ -24,8 +24,6 @@ module.exports = {
     },
 
     finalePosition: function(finaleBasketPosition) {
-        //finaleBasketPosition minus 220 is height of basket
-        //and 220(height of basket) + 70 is Get Started button
         $('#picnic-basket').css({'position': 'absolute','top': finaleBasketPosition - 220 + 70 + 'px','left': '50%' + 'px', 'margin-left' : '-160px'});
 
         $('#section-two-icon').addClass('hidden');

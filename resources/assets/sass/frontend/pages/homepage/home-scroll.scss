@@ -2,7 +2,7 @@
   height: 200px;
   width: 60px;
   position: fixed;
-  right: 250px;
+  right: 0;
   margin-left: 30px;
   margin-top: -100px;
   top: 50%;
@@ -11,6 +11,7 @@
     display: block;
   }
   #up-nav {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     background: url(../../img/website/NavBar.png) 40px 0px
@@ -36,6 +37,7 @@
     background: url(../../img/website/NavBar.png) 26px 64px;
   }
   #down-nav {
+    cursor: pointer;
     margin-top: 4px;
     width: 40px;
     height: 40px;

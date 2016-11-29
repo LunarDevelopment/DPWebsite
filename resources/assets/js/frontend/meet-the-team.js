@@ -1,3 +1,5 @@
+"use strict";
+
 import Vue from 'vue/dist/vue.js';
 
 var app = new Vue({
@@ -11,7 +13,7 @@ var app = new Vue({
         directors: true
     },
     methods: {
-        showAll: function () {
+        showAll: function() {
             this.hideAll();
             this.marketing = true;
             this.tech = true;
@@ -20,11 +22,11 @@ var app = new Vue({
             this.admin = true;
             this.directors = true;
         },
-        showMarketing: function () {
+        showMarketing: function() {
             this.hideAll();
             this.marketing = true;
         },
-        showTech: function () {
+        showTech: function() {
             this.marketing = false;
             this.tech = true;
             this.sales = false;
@@ -32,11 +34,11 @@ var app = new Vue({
             this.admin = false;
             this.directors = false;
         },
-        showSales: function () {
+        showSales: function() {
             this.hideAll();
             this.sales = true;
         },
-        showFacilities: function () {
+        showFacilities: function() {
             this.hideAll();
             this.facilities = true;
         },

@@ -1,5 +1,6 @@
 <div id="final-trigger"></div>
-<div id="section-six" class="container-fluid bg-grass home-footer full-height" style="position: relative;">
+@include('frontend.includes.footer-cities')
+<div id="section-six" class="container-fluid bg-grass home-footer">
     <img class="home-basket-tablet-footer hidden-lg" src="/img/website/basket.svg" alt="Picnic basket">
     <div class="container-fluid">
         <div class="row">

@@ -11066,6 +11066,7 @@ button.close {
 .header-logo {
   position: absolute;
   z-index: 1040;
+  bottom: 0;
 }
 
 .header-logo img {
@@ -11075,6 +11076,7 @@ button.close {
 
 .header-logo-fixed {
   position: fixed;
+  top: 0;
 }
 
 .header-logo-fixed img {
@@ -11109,6 +11111,7 @@ button.close {
     background-color: #F4F4F4;
     border: none;
     border-radius: 0;
+    position: relative;
   }
   .navbar.center .navbar-inner .nav {
     display: inline-block;
@@ -11508,7 +11511,7 @@ button.close {
   height: 200px;
   width: 60px;
   position: fixed;
-  right: 250px;
+  right: 0;
   margin-left: 30px;
   margin-top: -100px;
   top: 50%;
@@ -11520,6 +11523,7 @@ button.close {
 }
 
 .home-scroller #up-nav {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   background: url(../../img/website/NavBar.png) 40px 0px;
@@ -11550,6 +11554,7 @@ button.close {
 }
 
 .home-scroller #down-nav {
+  cursor: pointer;
   margin-top: 4px;
   width: 40px;
   height: 40px;
@@ -11655,6 +11660,13 @@ button.close {
   .home .panel p, .home .panel ul, .home .panel ol {
     margin-bottom: 35px;
   }
+}
+
+.cloud-borders {
+  height: 0;
+  top: 10px;
+  position: relative;
+  top: 200px;
 }
 
 .packages h3 {

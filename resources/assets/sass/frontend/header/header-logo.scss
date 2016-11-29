@@ -1,6 +1,7 @@
 .header-logo {
   position: absolute;
   z-index: 1040;
+  bottom: 0;
   img {
     height: 148px;
     width: auto;
@@ -9,6 +10,7 @@
 
 .header-logo-fixed {
   position: fixed;
+  top: 0;
   img {
     height: 74px;
     width: auto;
